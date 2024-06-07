@@ -33,4 +33,7 @@ class HomeController extends Controller
     public function pendaftaranWhatsapp(){
         return view('userpage.pendaftaran-whatsapp');
     }
+    public function strukturOrganisasi(){
+        return view('userpage.struktur-organisasi');
+    }
 }

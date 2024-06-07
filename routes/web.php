@@ -11,3 +11,4 @@ Route::get('/fasilitas',[\App\Http\Controllers\HomeController::class,'fasilitas'
 Route::get('/kontak',[\App\Http\Controllers\HomeController::class,'kontak']);
 Route::get('/pendaftaran-website',[\App\Http\Controllers\HomeController::class,'pendaftaranWebsite']);
 Route::get('/pendaftaran-whatsapp',[\App\Http\Controllers\HomeController::class,'pendaftaranWhatsapp']);
+Route::get('/struktur-organisasi',[\App\Http\Controllers\HomeController::class,'strukturOrganisasi']);
