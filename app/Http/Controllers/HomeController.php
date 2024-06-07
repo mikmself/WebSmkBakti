@@ -12,4 +12,7 @@ class HomeController extends Controller
     public function alurPendaftaran(){
         return view('userpage.alurpendaftaran');
     }
+    public function beasiswa(){
+        return view('userpage.beasiswa');
+    }
 }
