@@ -13,7 +13,8 @@
         "filament/forms": "^3.2",
         "filament/tables": "^3.2",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "spatie/laravel-medialibrary": "^11.5"
     },
     "require-dev": {
         "doctrine/dbal": "^4.0",
