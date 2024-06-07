@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Beasiswa;
+use App\Models\Guru;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,10 +15,12 @@ class HomeController extends Controller
         return view('userpage.alurpendaftaran');
     }
     public function beasiswa(){
-        return view('userpage.beasiswa');
+        $dataBeasiswa = Beasiswa::all();
+        return view('userpage.beasiswa',compact('dataBeasiswa'));
     }
     public function dataGuru(){
-        return view('userpage.dataguru');
+        $dataGuru = Guru::all();
+        return view('userpage.dataguru',compact('dataGuru'));
     }
     public function ekstrakulikuler(){
         return view('userpage.ekstrakulikuler');

@@ -23,13 +23,15 @@
                     <th>Deadline</th>
                     <th class="pendek">Lihat</th>
                 </tr>
-                <tr>
-                    <td class="pendek">1.</td>
-                    <td>SMK BAKTI Purwokerto school</td>
-                    <td>SMK BAKTI Purwokerto school</td>
-                    <td>9 Agustus 2024</td>
-                    <td class="pendek"><img src="/assets/img/icon/search.png" alt=""></td>
-                </tr>
+                @foreach($dataBeasiswa as $beasiswa)
+                    <tr>
+                        <td class="pendek">1.</td>
+                        <td>{{$beasiswa->nama_beasiswa}}</td>
+                        <td>{{$beasiswa->penyelenggara}}</td>
+                        <td>{{ date('d M Y', strtotime($beasiswa->deadline)) }}</td>
+                        <td class="pendek"><img src="/assets/img/icon/search.png" alt=""></td>
+                    </tr>
+                @endforeach
             </table>
         </div>
     </section>

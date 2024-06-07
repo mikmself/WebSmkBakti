@@ -23,13 +23,15 @@
                     <th>NIP</th>
                     <th class="pendek">Lihat</th>
                 </tr>
-                <tr>
-                    <td class="pendek">1.</td>
-                    <td>Saptodharmo Pramono</td>
-                    <td>Pendidikan Kewarganegaraan</td>
-                    <td>287672656782765787</td>
-                    <td class="pendek"><img src="/assets/img/icon/search.png" alt=""></td>
-                </tr>
+                @foreach($dataGuru as $guru)
+                    <tr>
+                        <td class="pendek">1.</td>
+                        <td>{{$guru->nama}}</td>
+                        <td>{{$guru->mapel}}</td>
+                        <td>{{$guru->nip}}</td>
+                        <td class="pendek"><img src="/assets/img/icon/search.png" alt=""></td>
+                    </tr>
+                @endforeach
             </table>
         </div>
     </section>
