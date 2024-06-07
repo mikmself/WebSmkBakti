@@ -27,4 +27,7 @@ class HomeController extends Controller
     public function kontak(){
         return view('userpage.kontak');
     }
+    public function pendaftaranWebsite(){
+        return view('userpage.pendaftaran-website');
+    }
 }

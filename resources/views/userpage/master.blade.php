@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @yield('style')
     <link rel="stylesheet" href="/assets/css/beranda.css">
     <link rel="stylesheet" href="/assets/css/responsif.css">
     <title>SMK BAKTI | @yield('title')</title>
