@@ -15,4 +15,7 @@ class HomeController extends Controller
     public function beasiswa(){
         return view('userpage.beasiswa');
     }
+    public function dataGuru(){
+        return view('userpage.dataguru');
+    }
 }
