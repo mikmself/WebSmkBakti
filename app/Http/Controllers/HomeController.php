@@ -9,4 +9,7 @@ class HomeController extends Controller
     public function index(){
         return view('userpage.index');
     }
+    public function alurPendaftaran(){
+        return view('userpage.alurpendaftaran');
+    }
 }
