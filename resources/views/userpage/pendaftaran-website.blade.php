@@ -256,6 +256,15 @@
                     <label for="">NAMA SUMBER REKOMENDASI</label>
                     <input type="text" name="" id="" />
                 </div>
+                <h1 class="title-form">DATA AKUN</h1>
+                <div class="input-group">
+                    <label for="">EMAIL</label>
+                    <input type="text" name="" id="" />
+                </div>
+                <div class="input-group">
+                    <label for="">PASSWORD</label>
+                    <input type="text" name="" id="" />
+                </div>
                 <div class="checkbox">
                     <input type="checkbox" name="" id="" />
                     <p class="desc">
