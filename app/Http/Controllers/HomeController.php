@@ -18,4 +18,7 @@ class HomeController extends Controller
     public function dataGuru(){
         return view('userpage.dataguru');
     }
+    public function ekstrakulikuler(){
+        return view('userpage.ekstrakulikuler');
+    }
 }
