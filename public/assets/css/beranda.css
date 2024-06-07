@@ -1,0 +1,1947 @@
+@font-face {
+  font-family: "Rubic-Black";
+  src: url("/assets/font/rubik/Rubik-Black.ttf");
+}
+@font-face {
+  font-family: "Rubic-Bold";
+  src: url("/assets/font/rubik/Rubik-Bold.ttf");
+}
+@font-face {
+  font-family: "Rubic-ExtraBold";
+  src: url("/assets/font/rubik/Rubik-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Rubic-Light";
+  src: url("/assets/font/rubik/Rubik-Light.ttf");
+}
+@font-face {
+  font-family: "Rubic-Medium";
+  src: url("/assets/font/rubik/Rubik-Medium.ttf");
+}
+@font-face {
+  font-family: "Rubic-Regular";
+  src: url("/assets/font/rubik/Rubik-Regular.ttf");
+}
+@font-face {
+  font-family: "Rubic-SemiBold";
+  src: url("/assets/font/rubik/Rubik-SemiBold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.topnav {
+  display: none;
+  overflow: hidden;
+  background-color: #00256E;
+}
+@media (max-width: 820px) {
+  .topnav {
+    display: block;
+  }
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #00256E;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #00256E;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+header {
+  width: 100%;
+}
+@media (max-width: 820px) {
+  header {
+    display: none;
+  }
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header nav img {
+  width: 15%;
+}
+header nav .items {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header nav .items a.item {
+  text-decoration: none;
+  color: #00256E;
+  font-family: "Rubic-Regular";
+  cursor: pointer;
+}
+header nav .items .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 7%;
+  left: 34.5%;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header nav .items .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header nav .items .dropdown-content2 {
+  display: none;
+  position: absolute;
+  top: 7%;
+  left: 57%;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header nav .items .dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header nav .search {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  margin-right: 0.5cm;
+}
+header nav .search input.search-input {
+  border: none;
+  width: 80%;
+  height: 40px;
+  outline: none;
+}
+
+main section#banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#banner img.hero-image {
+  width: 100vw;
+  background-color: #00256E;
+}
+main section#banner h1.main-title {
+  width: 80%;
+  font-size: 40px;
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  margin-top: 1cm;
+}
+main section#banner h1.main-title span.orange {
+  color: #F69400;
+}
+main section#banner .content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#banner .content .countdown {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1cm;
+}
+main section#banner .content .countdown .countdown-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgb(199, 198, 198);
+}
+main section#banner .content .countdown .countdown-item h1.countdown-number {
+  font-family: "Rubic-Bold";
+}
+main section#banner .content .countdown .countdown-item p.countdown-text {
+  font-family: "Rubic-Medium";
+}
+main section#banner .content .persuade {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 2cm;
+}
+main section#banner .content .persuade h1.title {
+  font-family: "Rubic-Semibold";
+  font-size: 80px;
+}
+main section#banner .content .persuade p.desc {
+  margin-top: 0.2cm;
+  margin-bottom: 1cm;
+  font-family: "Rubic-Semibold";
+  font-size: 25px;
+}
+main section#banner .content .persuade a.btn-register {
+  padding: 0.5cm 1cm;
+  background-color: #00256E;
+  color: white;
+  border-radius: 40px;
+  font-family: "Rubic-Semibold";
+}
+main section#profile {
+  background-color: #00256E;
+  margin-top: 4cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1cm;
+}
+main section#profile .left {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#profile .left iframe {
+  width: 800px;
+  height: 400px;
+}
+main section#profile .right {
+  width: 40%;
+}
+main section#profile .right h1.title {
+  width: 70%;
+  color: white;
+  font-family: "Rubic-Bold";
+  font-size: 35px;
+}
+main section#profile .right p.content {
+  background-color: #F69400;
+  width: 70%;
+  padding: 0.6cm 0.4cm;
+  font-family: "Rubic-Regular";
+  color: #00256E;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: 0.5cm;
+}
+main section#program {
+  width: 100%;
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#program .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+}
+main section#program .header h1.title {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  width: 15%;
+}
+main section#program .header hr.strip {
+  width: 5px;
+  height: 3cm;
+  background-color: #00256E;
+}
+main section#program .header p.desc {
+  width: 70%;
+  font-family: "Rubic-Bold";
+  font-size: 20px;
+  color: #00256E;
+}
+main section#program .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1cm;
+}
+main section#program .content .card {
+  width: 20%;
+  height: 11.5cm;
+}
+main section#program .content .card img.image {
+  width: 100%;
+}
+main section#program .content .card .text {
+  padding: 0.5cm;
+}
+main section#program .content .card .text h1.title {
+  font-family: "Rubic-Bold";
+  font-size: 25px;
+}
+main section#program .content .card .text p {
+  font-family: "Rubic-Medium";
+  font-size: 20px;
+  padding-left: 0.3cm;
+  margin-bottom: 1cm;
+}
+main section#program .content .card .text a.btn-next {
+  padding: 0.3cm 0.8cm;
+  background-color: #00256E;
+  color: white;
+  border-radius: 40px;
+  font-family: "Rubic-Semibold";
+  text-decoration: none;
+}
+main section#program .content .tkjt {
+  background-color: #F69400;
+}
+main section#program .content .mplb {
+  background-color: #F600C0;
+}
+main section#program .content .akl {
+  background-color: #3BAC06;
+}
+main section#program .content .akl .text p {
+  width: 70%;
+}
+main section#program .content .dkv {
+  background-color: #F9E31F;
+}
+main section#program .content .dkv .text p {
+  width: 70%;
+}
+main section#news {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2cm;
+  background-color: #00256E;
+  padding: 1cm;
+}
+main section#news .header {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main section#news .header h1.title {
+  font-size: "Rubic-Bold";
+  font-size: 40px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+main section#news .header a.btn-more {
+  color: white;
+  font-size: 30px;
+  font-family: "Rubic-Semibold";
+}
+main section#news .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1cm;
+}
+main section#news .cards .card {
+  width: 18%;
+  height: 12cm;
+  background-color: white;
+  border-radius: 20px;
+}
+main section#news .cards .card img.image {
+  width: 100%;
+}
+main section#news .cards .card .text {
+  padding: 0.3cm;
+}
+main section#news .cards .card .text h1.title {
+  font-family: "Rubic-Bold";
+  text-decoration: underline;
+}
+main section#news .cards .card .text p.content {
+  font-family: "Rubic-Regular";
+  margin-top: 0.2cm;
+}
+main section#event {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#event .left {
+  width: 50%;
+  padding: 3cm;
+}
+main section#event .left .title {
+  font-family: "Rubic-Bold";
+  font-size: 40px;
+  color: #00256E;
+}
+main section#event .left hr.line {
+  width: 60%;
+  height: 3px;
+  background-color: #00256E;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
+}
+main section#event .left p.content {
+  color: #00256E;
+  font-family: "Rubic-Medium";
+  font-size: 20px;
+  width: 70%;
+  margin-bottom: 1.5cm;
+}
+main section#event .left a.btn-more {
+  padding: 0.3cm 0.8cm;
+  background-color: #F69400;
+  color: #00256E;
+  border-radius: 40px;
+  font-family: "Rubic-Semibold";
+  text-decoration: none;
+}
+main section#event .right {
+  width: 50%;
+  margin-top: 1cm;
+}
+main section#event .right img.image {
+  width: 70%;
+}
+main section#event .right p.desc {
+  color: #00256E;
+  font-family: "Rubic-Bold";
+  font-size: 30px;
+  width: 50%;
+  margin-bottom: 1.5cm;
+}
+main section#testimoni {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #00256E;
+  padding: 2cm;
+}
+main section#testimoni h1.title {
+  font-family: "Rubic-Bold";
+  color: white;
+  font-size: 40px;
+}
+main section#testimoni hr.line {
+  width: 30%;
+  height: 4px;
+  background-color: white;
+  margin-top: 0.5cm;
+}
+main section#testimoni .content {
+  width: 80%;
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main section#testimoni .content p.desc {
+  width: 50%;
+  background-color: #F69400;
+  font-family: "Rubic-Regular";
+  font-size: 25px;
+  padding: 2cm;
+  border-radius: 30px;
+}
+main section#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main section#contact .left {
+  width: 50%;
+  height: 18cm;
+  background-color: rgba(0, 0, 0, 0.559);
+  background-image: url("/assets/img/content/contact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#contact .left h1.title {
+  font-family: "Rubic-Bold";
+  color: white;
+  font-size: 40px;
+  width: 50%;
+}
+main section#contact .left p.desc {
+  font-family: "Rubic-Regular";
+  color: white;
+  font-size: 25px;
+  width: 50%;
+  margin-top: 0.5cm;
+}
+main section#contact .left .contents {
+  width: 50%;
+  margin-top: 1cm;
+}
+main section#contact .left .contents .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1cm;
+}
+main section#contact .left .contents .content .icon {
+  background-color: #F69400;
+  padding: 0.3cm;
+  width: 1cm;
+  height: 1cm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 100%;
+}
+main section#contact .left .contents .content .fill p {
+  color: white;
+  font-family: "Rubic-Regular";
+  padding-left: 0.3cm;
+  margin-top: 0.2cm;
+}
+main section#contact .right {
+  width: 50%;
+  height: 18cm;
+  background-color: #D9D9D9;
+  padding-top: 3cm;
+}
+main section#contact .right form {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main section#contact .right form input.input-text {
+  height: 1.2cm;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-top: 0.5cm;
+  padding-left: 0.5cm;
+}
+main section#contact .right form input.input-text::placeholder {
+  font-family: "Rubic-Semibold";
+  font-size: 20px;
+}
+main section#contact .right form input#first-name {
+  width: 40%;
+}
+main section#contact .right form input#last-name {
+  width: 40%;
+}
+main section#contact .right form input#email {
+  width: 40%;
+}
+main section#contact .right form input#phone {
+  width: 40%;
+}
+main section#contact .right form textarea {
+  width: 86.5%;
+  height: 5cm;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-top: 0.5cm;
+  padding: 0.5cm;
+}
+main section#contact .right form textarea::placeholder {
+  font-family: "Rubic-Semibold";
+  font-size: 20px;
+}
+main section#contact .right form .container {
+  width: 86.5%;
+}
+main section#contact .right form .container button.btn-submit {
+  margin-top: 0.5cm;
+  width: 25%;
+  height: 1.3cm;
+  border: none;
+  outline: none;
+  background-color: #F69400;
+  border-radius: 30px;
+  font-family: "Rubic-Bold";
+  color: white;
+  font-size: 18px;
+}
+main section#title {
+  width: 100vw;
+  height: 12cm;
+  background-color: #00256E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 820px) {
+  main section#title {
+    height: 8cm;
+  }
+}
+main section#title h1 {
+  font-family: "Rubic-Bold";
+  color: white;
+  font-size: 40px;
+}
+main section#title h1 span.orange {
+  color: #F69400;
+}
+@media (max-width: 820px) {
+  main section#title h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#title h1 {
+    font-size: 25px;
+    margin-left: 0.3cm;
+  }
+}
+main section#struktur {
+  width: 100%;
+  margin: 2cm;
+}
+@media (max-width: 820px) {
+  main section#struktur {
+    margin: 1cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#struktur {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+main section#struktur .title {
+  width: 55%;
+}
+@media (max-width: 820px) {
+  main section#struktur .title {
+    width: 78%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#struktur .title {
+    width: 95%;
+  }
+}
+main section#struktur .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media (max-width: 820px) {
+  main section#struktur .title h1 {
+    font-size: 25px;
+  }
+}
+main section#struktur img {
+  width: 90%;
+  margin-top: 1cm;
+}
+main section#visimisi {
+  width: 100vw;
+  margin: 2cm;
+  overflow-x: hidden;
+}
+@media (max-width: 820px) {
+  main section#visimisi {
+    margin: 0.5cm;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#visimisi {
+    font-size: 15px;
+    margin-left: 0.2cm;
+    margin: 0;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+  }
+}
+main section#visimisi .title {
+  width: 21%;
+}
+@media (max-width: 820px) {
+  main section#visimisi .title {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#visimisi .title {
+    width: 65%;
+    margin-left: 0.3cm;
+  }
+}
+main section#visimisi .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media only screen and (max-width: 512px) {
+  main section#visimisi .title h1 {
+    font-size: 25px;
+  }
+}
+main section#visimisi .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#visimisi .text p {
+  width: 70%;
+  font-family: "Rubic-Bold";
+  font-size: 25px;
+  color: #00256E;
+  margin-top: 0.5cm;
+}
+@media (max-width: 820px) {
+  main section#visimisi .text p {
+    width: 95%;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#visimisi .text p {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+main section#visimisi .text p.center {
+  text-align: center;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+}
+main section#alurpendaftaran {
+  width: 100%;
+  margin: 2cm;
+}
+@media (max-width: 820px) {
+  main section#alurpendaftaran {
+    margin: 0.5cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#alurpendaftaran {
+    margin: 0px;
+    padding-left: 0.3cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+  }
+}
+main section#alurpendaftaran .title {
+  width: 100%;
+}
+main section#alurpendaftaran .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  margin: 1cm;
+  border-bottom: 4px solid #00256E;
+  width: 23%;
+}
+@media (max-width: 820px) {
+  main section#alurpendaftaran .title h1 {
+    width: 40%;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#alurpendaftaran .title h1 {
+    width: 73%;
+    font-size: 25px;
+    margin: 0px;
+  }
+}
+main section#alurpendaftaran .title .button {
+  margin: 1cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#alurpendaftaran .title .button {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+main section#alurpendaftaran .title .button a.btn {
+  background-color: #00256E;
+  color: white;
+  padding: 0.5cm 1cm;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Rubic-Bold";
+}
+@media (max-width: 820px) {
+  main section#alurpendaftaran .title .button a.btn {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#alurpendaftaran .title .button a.btn {
+    width: 65%;
+    margin-top: 0.2cm;
+    padding: 0.3cm 0.7cm;
+    align-self: start;
+  }
+}
+main section#alurpendaftaran img {
+  width: 90%;
+  margin-top: 1cm;
+}
+@media (max-width: 820px) {
+  main section#alurpendaftaran img {
+    width: 95%;
+  }
+}
+main section#fasilitas {
+  width: 100%;
+  margin-top: 2cm;
+}
+main section#fasilitas .title {
+  margin: 2cm;
+  width: 11%;
+}
+@media (max-width: 820px) {
+  main section#fasilitas .title {
+    width: 25%;
+    margin: 1cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#fasilitas .title {
+    width: 35%;
+    margin-left: 0.5cm;
+  }
+}
+main section#fasilitas .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media only screen and (max-width: 512px) {
+  main section#fasilitas .title h1 {
+    font-size: 25px;
+  }
+}
+main section#fasilitas .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1.5cm;
+  margin-bottom: 2cm;
+}
+main section#fasilitas .content .cards {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 820px) {
+  main section#fasilitas .content .cards {
+    width: 95%;
+  }
+}
+main section#fasilitas .content .cards .card {
+  width: 30%;
+  margin-top: 1.5cm;
+  background-color: #00256E;
+  border-radius: 30px;
+  padding-bottom: 0.5cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#fasilitas .content .cards .card {
+    width: 95%;
+  }
+}
+main section#fasilitas .content .cards .card img {
+  width: 100%;
+}
+main section#fasilitas .content .cards .card p {
+  margin-top: 0.5cm;
+  text-align: center;
+  color: white;
+  font-family: "Rubic-Regular";
+  font-size: 30px;
+}
+@media only screen and (max-width: 512px) {
+  main section#fasilitas .content .cards .card p {
+    font-size: 18px;
+    font-family: "Rubic-Bold";
+  }
+}
+main section#ekstrakulikuler {
+  width: 100%;
+  margin-top: 2cm;
+}
+main section#ekstrakulikuler .title {
+  margin: 2cm;
+  width: 21%;
+}
+@media (max-width: 820px) {
+  main section#ekstrakulikuler .title {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#ekstrakulikuler .title {
+    margin: 0.3cm;
+    width: 61%;
+  }
+}
+main section#ekstrakulikuler .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media only screen and (max-width: 512px) {
+  main section#ekstrakulikuler .title h1 {
+    font-size: 25px;
+  }
+}
+main section#ekstrakulikuler .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5cm;
+}
+main section#ekstrakulikuler .content .items {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 512px) {
+  main section#ekstrakulikuler .content .items {
+    width: 95%;
+  }
+}
+main section#ekstrakulikuler .content .items .item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#ekstrakulikuler .content .items .item {
+    width: 50%;
+  }
+}
+main section#ekstrakulikuler .content .items .item img.image {
+  width: 50%;
+}
+main section#ekstrakulikuler .content .items .item p.desc {
+  font-family: "Rubic-Semibold";
+  margin-top: 1cm;
+}
+main section#kontak {
+  width: 100%;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+}
+main section#kontak .title {
+  margin: 2cm;
+  width: 22%;
+}
+@media (max-width: 820px) {
+  main section#kontak .title {
+    width: 50%;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .title {
+    margin: 0px;
+    margin-left: 0.3cm;
+    width: 70%;
+  }
+}
+main section#kontak .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .title h1 {
+    font-size: 25px;
+  }
+}
+main section#kontak .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#kontak .content .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 1cm;
+}
+@media (max-width: 820px) {
+  main section#kontak .content .icons {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .content .icons {
+    padding-left: 0.3cm;
+  }
+}
+main section#kontak .content .icons .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 820px) {
+  main section#kontak .content .icons .icon {
+    margin-top: 1cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .content .icons .icon {
+    width: 95%;
+  }
+}
+main section#kontak .content .icons .icon img.image {
+  width: 20%;
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .content .icons .icon img.image {
+    width: 10%;
+  }
+}
+main section#kontak .content .icons .icon p {
+  width: 75%;
+  font-family: "Rubic-Semibold";
+  font-size: 18px;
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .content .icons .icon p {
+    width: 85%;
+  }
+}
+main section#kontak .content .icons .maps {
+  width: 40%;
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .content .icons .maps {
+    width: 100%;
+  }
+}
+main section#kontak .content .icons .maps img.image {
+  width: 5%;
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .content .icons .maps img.image {
+    width: 8%;
+  }
+}
+main section#kontak .content .icons .maps p {
+  width: 90%;
+}
+@media only screen and (max-width: 512px) {
+  main section#kontak .content .icons .maps p {
+    width: 85%;
+    font-size: 16px;
+  }
+}
+main section#kontak .content iframe {
+  width: 95% !important;
+  height: 7cm !important;
+}
+main section#beasiswa {
+  width: 100%;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#beasiswa .title {
+  margin: 2cm;
+  width: 11.5%;
+}
+@media (max-width: 820px) {
+  main section#beasiswa .title {
+    width: 26%;
+    font-size: 30px;
+    margin: 1cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#beasiswa .title {
+    margin: 0px;
+    width: 34%;
+    margin-bottom: 1cm;
+    margin-left: 0.3cm;
+    align-self: start;
+  }
+}
+main section#beasiswa .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media only screen and (max-width: 512px) {
+  main section#beasiswa .title h1 {
+    font-size: 25px;
+  }
+}
+main section#beasiswa .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 512px) {
+  main section#beasiswa .content {
+    width: 95%;
+    overflow-x: scroll;
+  }
+}
+main section#beasiswa .content .container {
+  width: 92%;
+  margin-bottom: 1cm;
+}
+main section#beasiswa .content .container .search {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  float: right;
+}
+@media (max-width: 820px) {
+  main section#beasiswa .content .container .search {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#beasiswa .content .container .search {
+    width: 70%;
+    float: left;
+    align-self: start;
+    margin-left: -25%;
+  }
+}
+main section#beasiswa .content .container .search p.desc {
+  color: #93959A;
+  font-family: "Rubic-Regular";
+}
+main section#beasiswa .content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 92%;
+  border: 1px solid #ddd;
+}
+main section#beasiswa .content table th, main section#beasiswa .content table td {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid black;
+}
+main section#beasiswa .content table th {
+  font-family: "Rubic-Bold";
+}
+main section#beasiswa .content table td {
+  font-family: "Rubic-Regular";
+}
+main section#beasiswa .content table tr:nth-child(even) {
+  background-color: #D9D9D9;
+}
+main section#beasiswa .content table td.pendek {
+  width: 2cm;
+}
+main section#dataguru {
+  width: 100%;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#dataguru {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+main section#dataguru .title {
+  margin: 2cm;
+  width: 12.5%;
+}
+@media (max-width: 820px) {
+  main section#dataguru .title {
+    width: 29%;
+    margin: 1cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#dataguru .title {
+    margin-left: 0px;
+    width: 38%;
+    align-self: start;
+    margin-left: 0.2cm;
+  }
+}
+main section#dataguru .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media only screen and (max-width: 512px) {
+  main section#dataguru .title h1 {
+    font-size: 25px;
+  }
+}
+main section#dataguru .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 512px) {
+  main section#dataguru .content {
+    width: 95%;
+    overflow-x: scroll;
+  }
+}
+main section#dataguru .content .container {
+  width: 92%;
+  margin-bottom: 1cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#dataguru .content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+main section#dataguru .content .container .search {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  float: right;
+}
+@media (max-width: 820px) {
+  main section#dataguru .content .container .search {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#dataguru .content .container .search {
+    width: 80%;
+    float: left;
+    align-self: start;
+    margin-left: -42%;
+  }
+}
+main section#dataguru .content .container .search p.desc {
+  color: #93959A;
+  font-family: "Rubic-Regular";
+}
+main section#dataguru .content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 92%;
+  border: 1px solid #ddd;
+}
+main section#dataguru .content table th, main section#dataguru .content table td {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid black;
+}
+main section#dataguru .content table th {
+  font-family: "Rubic-Bold";
+}
+main section#dataguru .content table td {
+  font-family: "Rubic-Regular";
+}
+main section#dataguru .content table tr:nth-child(even) {
+  background-color: #D9D9D9;
+}
+main section#dataguru .content table td.pendek {
+  width: 2cm;
+}
+main section#pendaftaran-whatsapp {
+  width: 100%;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+main section#pendaftaran-whatsapp .title {
+  margin: 2cm;
+  width: 33%;
+}
+@media (max-width: 820px) {
+  main section#pendaftaran-whatsapp .title {
+    width: 77%;
+    font-size: 30px;
+    margin: 1cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp .title {
+    width: 70%;
+    margin: 0px;
+    padding-left: 0.3cm;
+    align-self: start;
+  }
+}
+main section#pendaftaran-whatsapp .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp .title h1 {
+    font-size: 25px;
+  }
+}
+main section#pendaftaran-whatsapp .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp .content {
+    width: 95%;
+    overflow-x: scroll;
+    margin-top: 1cm;
+  }
+}
+main section#pendaftaran-whatsapp .content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 92%;
+  border: 1px solid #ddd;
+}
+main section#pendaftaran-whatsapp .content table th, main section#pendaftaran-whatsapp .content table td {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid black;
+}
+main section#pendaftaran-whatsapp .content table th img, main section#pendaftaran-whatsapp .content table td img {
+  width: 1cm;
+}
+main section#pendaftaran-whatsapp .content table th {
+  font-family: "Rubic-Bold";
+}
+main section#pendaftaran-whatsapp .content table td {
+  font-family: "Rubic-Regular";
+}
+main section#pendaftaran-whatsapp .content table tr:nth-child(even) {
+  background-color: #D9D9D9;
+}
+main section#pendaftaran-whatsapp .content table td.pendek {
+  width: 2cm;
+}
+main section#pendaftaran-whatsapp .content table td.gambar {
+  text-align: center;
+}
+main section#pendaftaran-whatsapp .content .whatsapp {
+  width: 92%;
+  height: 10cm;
+  border: 1px solid black;
+  margin-top: 2cm;
+  text-align: center;
+  background-color: #D9D9D9;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp .content .whatsapp {
+    width: 12cm;
+    height: 14cm;
+  }
+}
+main section#pendaftaran-whatsapp .content .whatsapp .title-content {
+  background-color: #00256E;
+  padding: 1cm;
+}
+main section#pendaftaran-whatsapp .content .whatsapp .title-content h1.text {
+  color: white;
+  font-family: "Rubic-Bold";
+  font-size: 30px;
+}
+main section#pendaftaran-whatsapp .content .whatsapp .title-content h1.text span.orange {
+  color: #F69400;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp .content .whatsapp .title-content h1.text {
+    font-size: 25px;
+  }
+}
+main section#pendaftaran-whatsapp .content .whatsapp p.desc {
+  margin-top: 1cm;
+  font-family: "Rubic-Regular";
+  font-size: 20px;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp .content .whatsapp p.desc {
+    font-size: 14px;
+  }
+}
+main section#pendaftaran-whatsapp .content .whatsapp .numbers {
+  margin-top: 1cm;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main section#pendaftaran-whatsapp .content .whatsapp .numbers .number {
+  width: 30%;
+  background-color: #00256E;
+  padding: 0.5cm;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp .content .whatsapp .numbers .number {
+    width: 45%;
+    margin-top: 0.5cm;
+  }
+}
+main section#pendaftaran-whatsapp .content .whatsapp .numbers .number p {
+  color: white;
+  font-family: "Rubic-Semibold";
+  font-size: 20px;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-whatsapp .content .whatsapp .numbers .number p {
+    font-size: 14px;
+  }
+}
+main section#pendaftaran-whatsapp .content .whatsapp .numbers .number p.phone-number {
+  margin-top: 0.5cm;
+}
+main section#pendaftaran-website {
+  width: 100%;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+}
+main section#pendaftaran-website .title {
+  margin: 2cm;
+  width: 33%;
+}
+@media (max-width: 820px) {
+  main section#pendaftaran-website .title {
+    width: 77%;
+    font-size: 30px;
+    margin: 1cm;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .title {
+    margin: 0px;
+    margin-left: 0.3cm;
+    width: 90%;
+    margin-bottom: 1cm;
+  }
+}
+main section#pendaftaran-website .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .title h1 {
+    font-size: 25px;
+  }
+}
+main section#pendaftaran-website .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#pendaftaran-website .content form {
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 2cm;
+}
+@media (max-width: 820px) {
+  main section#pendaftaran-website .content form {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .content form {
+    width: 95%;
+  }
+}
+main section#pendaftaran-website .content form .title-form {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 1cm;
+}
+main section#pendaftaran-website .content form .title-form h1.text {
+  font-family: "Rubic-Bold";
+}
+main section#pendaftaran-website .content form .input-group {
+  width: 80%;
+  margin-top: 1cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .content form .input-group {
+    width: 95%;
+    margin-top: 0.5cm;
+  }
+}
+main section#pendaftaran-website .content form .input-group label {
+  font-family: "Rubic-Regular";
+  margin-left: 0.5cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .content form .input-group label {
+    margin-left: 0px;
+  }
+}
+main section#pendaftaran-website .content form .input-group input {
+  width: 100%;
+  height: 2cm;
+  border-radius: 40px;
+  border: 2px solid #00256E;
+  margin-top: 0.5cm;
+  padding-left: 0.5cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .content form .input-group input {
+    height: 1.5cm;
+  }
+}
+main section#pendaftaran-website .content form .input-group select {
+  width: 100% !important;
+  height: 2cm !important;
+  border-radius: 40px !important;
+  border: 2px solid #00256E !important;
+  margin-top: 0.5cm !important;
+  padding-left: 0.5cm !important;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .content form .input-group select {
+    height: 1.5cm !important;
+  }
+}
+main section#pendaftaran-website .content form .input-group select option {
+  font-family: "Rubic-Regular" !important;
+  font-size: 20px !important;
+}
+main section#pendaftaran-website .content form .checkbox {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1cm;
+}
+main section#pendaftaran-website .content form .checkbox input {
+  width: 5%;
+}
+main section#pendaftaran-website .content form .checkbox input {
+  transform: scale(3);
+  background-color: #D9D9D9;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .content form .checkbox input {
+    transform: scale(2);
+  }
+}
+main section#pendaftaran-website .content form .checkbox p.desc {
+  width: 90%;
+  font-family: "Rubic-Regular";
+  color: #00256E;
+  font-size: 20px;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .content form .checkbox p.desc {
+    font-size: 14px;
+  }
+}
+main section#pendaftaran-website .content form button {
+  width: 80%;
+  height: 2cm;
+  border-radius: 40px;
+  background-color: #00256E;
+  color: white;
+  font-family: "Rubic-Bold";
+  font-size: 30px;
+  margin-top: 1cm;
+}
+@media only screen and (max-width: 512px) {
+  main section#pendaftaran-website .content form button {
+    font-size: 15px;
+    height: 1.2cm;
+    width: 50%;
+  }
+}
+main section#login {
+  width: 100%;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+}
+main section#login .title {
+  margin: 2cm;
+  width: 19.5%;
+}
+main section#login .title h1 {
+  font-family: "Rubic-Bold";
+  color: #00256E;
+  font-size: 40px;
+  border-bottom: 3px solid #00256E;
+}
+main section#login .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section#login .content .title-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main section#login .content form {
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 2cm;
+}
+main section#login .content form .title-form {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 1cm;
+}
+main section#login .content form .title-form h1.text {
+  font-family: "Rubic-Bold";
+}
+main section#login .content form .input-group {
+  width: 80%;
+  margin-top: 1cm;
+}
+main section#login .content form .input-group label {
+  font-family: "Rubic-Regular";
+  margin-left: 0.5cm;
+}
+main section#login .content form .input-group input {
+  width: 100%;
+  height: 2cm;
+  border-radius: 40px;
+  border: 2px solid #00256E;
+  margin-top: 0.5cm;
+}
+main section#login .content form .input-group a.forgot {
+  float: right;
+  color: #0C1FC7;
+  text-decoration: none;
+  font-family: "Rubic-Regular";
+  font-size: 20px;
+}
+main section#login .content form button {
+  width: 80%;
+  height: 2cm;
+  border-radius: 30px;
+  background-color: #00256E;
+  color: white;
+  font-family: "Rubic-Bold";
+  font-size: 30px;
+  margin-top: 1cm;
+}
+
+footer {
+  background-color: #00256E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 3cm;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  height: 7cm;
+}
+footer div h1 {
+  color: white;
+  font-family: "Rubic-Bold";
+}
+footer div a {
+  margin-top: 0.4cm;
+  font-family: "Rubic-Light";
+  color: white;
+  text-decoration: none;
+}
+
+.display-block {
+  display: block !important;
+}
+
+.select2-selection__rendered {
+  line-height: 2cm !important;
+}
+
+.select2-container .select2-selection--single {
+  height: 2cm !important;
+  border: 2px solid #00256E !important;
+  border-radius: 40px !important;
+  outline: none;
+  overflow: hidden;
+  width: 100% !important;
+}
+@media only screen and (max-width: 512px) {
+  .select2-container .select2-selection--single {
+    height: 1.5cm !important;
+  }
+}
+
+.select2-selection__arrow {
+  height: 2cm !important;
+  border: 2px solid #00256E !important;
+  border-radius: 40px !important;
+  outline: none;
+  overflow: hidden;
+  width: 100% !important;
+}
+@media only screen and (max-width: 512px) {
+  .select2-selection__arrow {
+    height: 1.5cm !important;
+  }
+}/*# sourceMappingURL=beranda.css.map */
