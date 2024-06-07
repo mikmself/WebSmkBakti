@@ -16,8 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class KontakResource extends Resource
 {
     protected static ?string $model = Kontak::class;
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-left-right';
+    protected static ?string $slug = 'kontak';
+    protected static ?string $navigationLabel = 'Kontak';
+    protected static ?string $pluralLabel = 'Kontak';
 
     public static function form(Form $form): Form
     {

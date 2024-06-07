@@ -16,8 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class EkstrakulikulerResource extends Resource
 {
     protected static ?string $model = Ekstrakulikuler::class;
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-lifebuoy';
+    protected static ?string $slug = 'ekstrakulikuler';
+    protected static ?string $navigationLabel = 'Ekstrakulikuler';
+    protected static ?string $pluralLabel = 'Ekstrakulikuler';
 
     public static function form(Form $form): Form
     {

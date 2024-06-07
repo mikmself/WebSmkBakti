@@ -17,7 +17,10 @@ class PendaftarResource extends Resource
 {
     protected static ?string $model = Pendaftar::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-user-plus';
+    protected static ?string $slug = 'pendaftar';
+    protected static ?string $navigationLabel = 'Pendaftar';
+    protected static ?string $pluralLabel = 'Pendaftar';
 
     public static function form(Form $form): Form
     {

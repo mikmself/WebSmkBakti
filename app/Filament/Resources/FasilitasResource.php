@@ -16,9 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class FasilitasResource extends Resource
 {
     protected static ?string $model = Fasilitas::class;
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    protected static ?string $navigationIcon = 'heroicon-o-building-office-2';
+    protected static ?string $slug = 'fasilitas';
+    protected static ?string $navigationLabel = 'Fasilitas';
+    protected static ?string $pluralLabel = 'Fasilitas';
     public static function form(Form $form): Form
     {
         return $form

@@ -16,8 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class BeasiswaResource extends Resource
 {
     protected static ?string $model = Beasiswa::class;
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string  $navigationIcon = 'heroicon-o-academic-cap';
+    protected static ?string $slug = 'beasiswa';
+    protected static ?string $navigationLabel  = 'Beasiswa';
+    protected static ?string $pluralLabel = 'Beasiswa';
 
     public static function form(Form $form): Form
     {
