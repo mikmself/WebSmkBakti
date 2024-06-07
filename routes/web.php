@@ -10,3 +10,4 @@ Route::get('/ekstrakulikuler',[\App\Http\Controllers\HomeController::class,'ekst
 Route::get('/fasilitas',[\App\Http\Controllers\HomeController::class,'fasilitas']);
 Route::get('/kontak',[\App\Http\Controllers\HomeController::class,'kontak']);
 Route::get('/pendaftaran-website',[\App\Http\Controllers\HomeController::class,'pendaftaranWebsite']);
+Route::get('/pendaftaran-whatsapp',[\App\Http\Controllers\HomeController::class,'pendaftaranWhatsapp']);
