@@ -10,32 +10,32 @@
 </head>
 <body>
 <div class="topnav" id="myTopnav">
-    <a href="/index.html" class="active">BERANDA</a>
+    <a href="{{route('index')}}" class="active">BERANDA</a>
     <div class="dropdown">
         <button class="dropbtn">PROFILE
             &#x25BC;
         </button>
         <div class="dropdown-content">
-            <a href="/visimisi.html">VISI MISI</a>
-            <a href="/fasilitas.html">FASILITAS</a>
-            <a href="/ekstrakulikuler.html">EKSTRAKULIKULER</a>
-            <a href="/struktur-organisasi.html">STRUKTUR ORGANISASI</a>
+            <a href="{{route('visiMisi')}}">VISI MISI</a>
+            <a href="{{route('fasilitas')}}">FASILITAS</a>
+            <a href="{{route('ekstrakulikuler')}}">EKSTRAKULIKULER</a>
+            <a href="{{route('strukturOrganisasi')}}">STRUKTUR ORGANISASI</a>
         </div>
     </div>
-    <a href="/dataguru.html">DATA GURU</a>
+    <a href="{{route('dataGuru')}}">DATA GURU</a>
     <a href="">GALERI</a>
     <div class="dropdown">
         <button class="dropbtn">PPDB
             &#x25BC;
         </button>
         <div class="dropdown-content">
-            <a href="/alurpendaftaran.html">ALUR PENDAFTARAN</a>
-            <a href="/beasiswa.html">BEASISWA</a>
-            <a href="/pendaftaran-whatsapp.html">PENDAFTARAN VIA WHATSAPP</a>
-            <a href="/pendaftaran-website.html">PENDAFTARAN VIA WEBSITE</a>
+            <a href="{{route('alurPendaftaran')}}">ALUR PENDAFTARAN</a>
+            <a href="{{route('beasiswa')}}">BEASISWA</a>
+            <a href="{{route('pendaftaranWhatsapp')}}">PENDAFTARAN VIA WHATSAPP</a>
+            <a href="{{route('pendaftaranWebsite')}}">PENDAFTARAN VIA WEBSITE</a>
         </div>
     </div>
-    <a href="/kontak.html">KONTAK</a>
+    <a href="{{route('kontak')}}">KONTAK</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 <header>
@@ -46,24 +46,24 @@
             class="logo"
         />
         <div class="items">
-            <a href="/index.html" class="item">BERANDA</a>
+            <a href="{{route('index')}}" class="item">BERANDA</a>
             <a class="item" id="dropdown">PROFILE &#x25BC;</a>
             <div class="dropdown-content" id="dropdown-content">
-                <a href="/visimisi.html">VISI MISI</a>
-                <a href="/fasilitas.html">FASILITIAS</a>
-                <a href="/ekstrakulikuler.html">EKSTRAKULIKULER</a>
-                <a href="/struktur-organisasi.html">STRUKTUR ORGANISASI</a>
+                <a href="{{route('visiMisi')}}">VISI MISI</a>
+                <a href="{{route('fasilitas')}}">FASILITIAS</a>
+                <a href="{{route('ekstrakulikuler')}}">EKSTRAKULIKULER</a>
+                <a href="{{route('strukturOrganisasi')}}">STRUKTUR ORGANISASI</a>
             </div>
-            <a href="/dataguru.html" class="item">DATA GURU</a>
+            <a href="{{route('dataGuru')}}" class="item">DATA GURU</a>
             <a href="" class="item">GALERI</a>
             <a class="item" id="dropdown2">PPDB &#x25BC;</a>
             <div class="dropdown-content2" id="dropdown-content2">
-                <a href="/alurpendaftaran.html">ALUR PENDAFTARAN</a>
-                <a href="/beasiswa.html">BEASISWA</a>
-                <a href="/pendaftaran-whatsapp.html">PENDAFTARAN VIA WHATSAPP</a>
-                <a href="/pendaftaran-website.html">PENDAFTARAN VIA WEBSITE</a>
+                <a href="{{route('alurPendaftaran')}}">ALUR PENDAFTARAN</a>
+                <a href="{{route('beasiswa')}}">BEASISWA</a>
+                <a href="{{route('pendaftaranWhatsapp')}}">PENDAFTARAN VIA WHATSAPP</a>
+                <a href="{{route('pendaftaranWebsite')}}">PENDAFTARAN VIA WEBSITE</a>
             </div>
-            <a href="/kontak.html" class="item">KONTAK</a>
+            <a href="{{route('kontak')}}" class="item">KONTAK</a>
         </div>
         <div class="search">
             <input type="text" name="search" class="search-input">
