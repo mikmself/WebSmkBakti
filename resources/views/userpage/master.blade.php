@@ -9,6 +9,7 @@
     <title>SMK BAKTI | @yield('title')</title>
 </head>
 <body>
+@include('sweetalert::alert')
 <div class="topnav" id="myTopnav">
     <a href="{{route('index')}}" class="active">BERANDA</a>
     <div class="dropdown">
@@ -108,9 +109,10 @@
             </div>
         </div>
         <div class="right">
-            <form action="">
-                <input type="text" name="first-name" id="first-name" class="input-text" placeholder="First name">
-                <input type="text" name="last-name" id="last-name" class="input-text" placeholder="Last name">
+            <form action="{{route('kontak.store')}}" method="post">
+                @csrf
+                <input type="text" name="first_name" id="first-name" class="input-text" placeholder="First name">
+                <input type="text" name="last_name" id="last-name" class="input-text" placeholder="Last name">
                 <input type="email" name="email" id="email" class="input-text" placeholder="Email address">
                 <input type="text" name="phone" id="phone" class="input-text" placeholder="Phone number">
                 <textarea name="message" id="message" class="input-text" placeholder="Message"></textarea>

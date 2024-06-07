@@ -13,3 +13,5 @@ Route::get('/pendaftaran-website',[\App\Http\Controllers\HomeController::class,'
 Route::get('/pendaftaran-whatsapp',[\App\Http\Controllers\HomeController::class,'pendaftaranWhatsapp'])->name('pendaftaranWhatsapp');
 Route::get('/struktur-organisasi',[\App\Http\Controllers\HomeController::class,'strukturOrganisasi'])->name('strukturOrganisasi');
 Route::get('/visi-misi',[\App\Http\Controllers\HomeController::class,'visiMisi'])->name('visiMisi');
+
+Route::post('/kontak',[\App\Http\Controllers\KontakController::class,'store'])->name('kontak.store');
