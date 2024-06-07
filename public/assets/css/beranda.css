@@ -1235,10 +1235,10 @@ main section#kontak .content .icons .maps p {
     width: 85%;
     font-size: 16px;
   }
-}
-main section#kontak .content iframe {
-  width: 95% !important;
-  height: 7cm !important;
+    main section#kontak .content iframe {
+        width: 95% !important;
+        height: 7cm !important;
+    }
 }
 main section#beasiswa {
   width: 100%;

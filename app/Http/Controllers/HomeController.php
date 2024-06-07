@@ -24,4 +24,7 @@ class HomeController extends Controller
     public function fasilitas(){
         return view('userpage.fasilitas');
     }
+    public function kontak(){
+        return view('userpage.kontak');
+    }
 }
