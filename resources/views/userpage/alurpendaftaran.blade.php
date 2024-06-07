@@ -1,6 +1,9 @@
 @extends('userpage.master')
 @section('title','Alur Pendaftaran')
 @section('content')
+    <section id="title">
+        <h1>ALUR PENDAFTARAN <span class="orange">SMK BAKTI</span> PURWOKERTO</h1>
+    </section>
     <section id="alurpendaftaran">
         <div class="title">
             <h1>ALUR PENDAFTARAN</h1>
