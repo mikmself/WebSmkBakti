@@ -11,19 +11,19 @@ class BeasiswaSeeder extends Seeder
     public function run(): void
     {
         Beasiswa::create([
-            'nama' => 'SMK BAKTI Purwokerto school',
+            'nama_beasiswa' => 'SMK BAKTI Purwokerto school',
             'penyelenggara' => 'SMK BAKTI Purwokerto school',
-            'deadline' => '2024-12-31',
+            'deadline' => '2024-06-06',
         ]);
         Beasiswa::create([
-            'nama' => 'Beasiswa Pendidikan',
+            'nama_beasiswa' => 'Beasiswa Pendidikan',
             'penyelenggara' => 'Pemerintah',
-            'deadline' => '2024-06-31',
+            'deadline' => '2024-06-06',
         ]);
         Beasiswa::create([
-            'nama' => 'Beasiswa KIP',
+            'nama_beasiswa' => 'Beasiswa KIP',
             'penyelenggara' => 'Pemerintah',
-            'deadline' => '2024-08-31',
+            'deadline' => '2024-06-06',
         ]);
     }
 }
