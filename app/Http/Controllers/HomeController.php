@@ -21,4 +21,7 @@ class HomeController extends Controller
     public function ekstrakulikuler(){
         return view('userpage.ekstrakulikuler');
     }
+    public function fasilitas(){
+        return view('userpage.fasilitas');
+    }
 }
