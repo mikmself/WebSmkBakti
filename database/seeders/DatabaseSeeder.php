@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             PendaftarSeeder::class,
             BeasiswaSeeder::class,
             KontakSeeder::class,
+            GuruSeeder::class,
         ]);
     }
 }
