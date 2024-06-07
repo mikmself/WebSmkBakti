@@ -36,4 +36,7 @@ class HomeController extends Controller
     public function strukturOrganisasi(){
         return view('userpage.struktur-organisasi');
     }
+    public function visiMisi(){
+        return view('userpage.visimisi');
+    }
 }
