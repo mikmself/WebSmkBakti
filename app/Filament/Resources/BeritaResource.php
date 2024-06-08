@@ -27,13 +27,10 @@ class BeritaResource extends Resource
                 Forms\Components\TextInput::make('judul')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('slug')
+                Forms\Components\FileUpload::make('foto')
                     ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('foto')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\Textarea::make('isi')
+                    ->image(),
+                Forms\Components\RichEditor::make('isi')
                     ->required()
                     ->columnSpanFull(),
             ]);
