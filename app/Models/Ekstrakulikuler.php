@@ -9,5 +9,5 @@ class Ekstrakulikuler extends Model
 {
     use HasFactory;
     protected $table = 'ekstrakulikuler';
-    protected $fillable = ['nama_ekstrakulikuler', 'deskripsi', 'foto'];
+    protected $fillable = ['nama', 'foto'];
 }
