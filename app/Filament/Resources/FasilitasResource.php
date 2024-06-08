@@ -27,9 +27,10 @@ class FasilitasResource extends Resource
                 Forms\Components\TextInput::make('nama')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('foto')
+                Forms\Components\FileUpload::make('foto')
                     ->required()
-                    ->maxLength(255),
+                    ->image()
+                    ->storeFileNamesIn('fasilitas')
             ]);
     }
 
@@ -39,7 +40,8 @@ class FasilitasResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('nama')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('foto')
+                Tables\Columns\ImageColumn::make('foto')
+                    ->height(200)
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
