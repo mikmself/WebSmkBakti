@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Beasiswa;
+use App\Models\Ekstrakulikuler;
+use App\Models\Fasilitas;
 use App\Models\Guru;
 use Illuminate\Http\Request;
 
@@ -23,10 +25,12 @@ class HomeController extends Controller
         return view('userpage.dataguru',compact('dataGuru'));
     }
     public function ekstrakulikuler(){
-        return view('userpage.ekstrakulikuler');
+        $dataEkstrakulikuler = Ekstrakulikuler::all();
+        return view('userpage.ekstrakulikuler',compact('dataEkstrakulikuler'));
     }
     public function fasilitas(){
-        return view('userpage.fasilitas');
+        $dataFasilitas = Fasilitas::all();
+        return view('userpage.fasilitas',compact('dataFasilitas'));
     }
     public function kontak(){
         return view('userpage.kontak');

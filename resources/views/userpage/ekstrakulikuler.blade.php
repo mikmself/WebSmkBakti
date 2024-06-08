@@ -10,30 +10,12 @@
         </div>
         <div class="content">
             <div class="items">
-                <div class="item">
-                    <img src="/assets/img/logo/ekstrakulikuler/pramuka.png" alt="" class="image">
-                    <p class="desc">PRAMUKA</p>
-                </div>
-                <div class="item">
-                    <img src="/assets/img/logo/ekstrakulikuler/paskibraka.png" alt="" class="image">
-                    <p class="desc">PASKIBRAKA</p>
-                </div>
-                <div class="item">
-                    <img src="/assets/img/logo/ekstrakulikuler/pmr.png" alt="" class="image">
-                    <p class="desc">PMR</p>
-                </div>
-                <div class="item">
-                    <img src="/assets/img/logo/ekstrakulikuler/pks.png" alt="" class="image">
-                    <p class="desc">PKS</p>
-                </div>
-                <div class="item">
-                    <img src="/assets/img/logo/ekstrakulikuler/osis.png" alt="" class="image">
-                    <p class="desc">OSIS</p>
-                </div>
-                <div class="item">
-                    <img src="/assets/img/logo/ekstrakulikuler/marching-band.png" alt="" class="image">
-                    <p class="desc">MARCHING BAND</p>
-                </div>
+                @foreach($dataEkstrakulikuler as $ekstrakulikuler)
+                    <div class="item">
+                        <img src="/storage/{{$ekstrakulikuler->foto}}" alt="" class="image">
+                        <p class="desc">{{$ekstrakulikuler->nama}}</p>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>

@@ -10,30 +10,12 @@
         </div>
         <div class="content">
             <div class="cards">
+                @foreach($dataFasilitas as $fasilitas)
                 <div class="card">
-                    <img src="/assets/img/content/fasilitas/mushola.png" alt="" srcset="">
-                    <p>Ruang Ibadah</p>
+                    <img src="/storage/{{$fasilitas->foto}}" alt="" srcset="">
+                    <p>{{$fasilitas->nama}}</p>
                 </div>
-                <div class="card">
-                    <img src="/assets/img/content/fasilitas/mushola.png" alt="" srcset="">
-                    <p>Ruang Ibadah</p>
-                </div>
-                <div class="card">
-                    <img src="/assets/img/content/fasilitas/mushola.png" alt="" srcset="">
-                    <p>Ruang Ibadah</p>
-                </div>
-                <div class="card">
-                    <img src="/assets/img/content/fasilitas/mushola.png" alt="" srcset="">
-                    <p>Ruang Ibadah</p>
-                </div>
-                <div class="card">
-                    <img src="/assets/img/content/fasilitas/mushola.png" alt="" srcset="">
-                    <p>Ruang Ibadah</p>
-                </div>
-                <div class="card">
-                    <img src="/assets/img/content/fasilitas/mushola.png" alt="" srcset="">
-                    <p>Ruang Ibadah</p>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

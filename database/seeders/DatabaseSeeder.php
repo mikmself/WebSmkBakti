@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
             BeasiswaSeeder::class,
             KontakSeeder::class,
             GuruSeeder::class,
+            EkstrakulikulerSeeder::class,
+            FasilitasSeeder::class
         ]);
     }
 }
