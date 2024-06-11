@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
             KontakSeeder::class,
             GuruSeeder::class,
             EkstrakulikulerSeeder::class,
-            FasilitasSeeder::class
+            FasilitasSeeder::class,
+            BeritaSeeder::class,
         ]);
     }
 }
