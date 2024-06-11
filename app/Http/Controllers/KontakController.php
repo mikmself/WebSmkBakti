@@ -6,7 +6,6 @@ use App\Models\Kontak;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
-use RealRashid\SweetAlert\Facades\Alert;
 
 class KontakController extends Controller
 {
@@ -20,7 +19,7 @@ class KontakController extends Controller
         ]);
         if ($validator->fails()) {
             foreach ($validator->errors()->all() as $error) {
-                Alert::error('Error', $error);
+                toast($error,'error');
             }
             return redirect()->back();
         }
@@ -34,11 +33,11 @@ class KontakController extends Controller
                 'message' => $request->message,
             ]);
             DB::commit();
-            Alert::success('Success', 'Data berhasil disimpan');
+            toast('Data berhasil disimpan','success');
             return redirect()->back();
         }catch (\Exception $e){
             DB::rollBack();
-            Alert::error('Error', $e->getMessage());
+            toast($e->getMessage(),'error');
             return redirect()->back();
         }
     }

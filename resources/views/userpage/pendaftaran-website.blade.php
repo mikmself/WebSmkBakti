@@ -14,7 +14,8 @@
             <h1>PENDAFTARAN VIA WEBSITE</h1>
         </div>
         <div class="content">
-            <form action="">
+            <form action="{{route('daftarWebsite')}}" method="post">
+                @csrf
                 <div class="title-form">
                     <h1 class="text">DATA CALON SISWA</h1>
                 </div>
@@ -45,85 +46,85 @@
                     <label for="">Asal Sekolah SMP/MTS</label>
                     <select name="asal_sekolah" id="asalsekolah">
                         <option selected="" disabled="">-- Pilih sekolah --</option>
-                        <option value="23">SMP DIPONEGORO 1 PURWOKERTO</option>
-                        <option value="24">SMP ISLAM TERPADU HARAPAN BUNDA</option>
-                        <option value="25">SMP MAARIF NU 03 PURWOKERTO</option>
-                        <option value="26">SMP MAARIF NU 2 PURWOKERTO</option>
-                        <option value="27">SMP MUHAMMADIYAH 1 PURWOKERTO</option>
-                        <option value="28">SMP MUHAMMADIYAH 2 PURWOKERTO</option>
-                        <option value="29">SMP NEGERI 5 PURWOKERTO</option>
-                        <option value="30">SMP NEGERI 7 PURWOKERTO</option>
-                        <option value="31">SMP TELKOM PURWOKERTO</option>
-                        <option value="32">SMPS NASIONAL 3 BAHASA PUTERA HARAPAN</option>
-                        <option value="33">MTSN 1 BANYUMAS</option>
-                        <option value="34">MTS MUHAMMADIYAH PURWOKERTO</option>
-                        <option value="35">SMP AL IRSYAD AL ISLAMIYYAH</option>
-                        <option value="36">SMP BRUDERAN PURWOKERTO</option>
-                        <option value="37">SMP KRISTEN 1 PURWOKERTO</option>
-                        <option value="38">SMP MAARIF NU 1 PURWOKERTO</option>
-                        <option value="39">SMP NEGERI 1 PURWOKERTO</option>
-                        <option value="40">SMP NEGERI 2 PURWOKERTO</option>
-                        <option value="41">SMP NEGERI 6 PURWOKERTO</option>
-                        <option value="42">SMP NEGERI 8 PURWOKERTO</option>
-                        <option value="43">SMP PERMATA HATI</option>
-                        <option value="44">SMP SUSTERAN PURWOKERTO</option>
-                        <option value="45">SMPN 3 PURWOKERTO</option>
-                        <option value="46">MTS AL HIDAYAH PURWOKERTO BARAT</option>
-                        <option value="47">MTS MA`ARIF NU 1 PURWOKERTO BARAT</option>
-                        <option value="48"> SMP BOARDING SCHOOL PUTRA HARAPAN PURWOKERTO</option>
-                        <option value="49">SMP GUNUNGJATI 1 PURWOKERTO</option>
-                        <option value="50">SMP GUNUNGJATI 2 PURWOKERTO</option>
-                        <option value="51">SMP NEGERI 4 PURWOKERTO</option>
-                        <option value="52">MTS AL - HIDAYAH PURWOKERTO</option>
-                        <option value="53">SMP MUHAMMADIYAH 3 PURWOKERTO</option>
-                        <option value="54">SMP NEGERI 9 PURWOKERTO</option>
-                        <option value="55">MTS AL IKHSAN BEJI KEDUNGBANTENG</option>
-                        <option value="56">MTS MA`ARIF NU 1 KEDUNGBANTENG</option>
-                        <option value="57">SMP DIPONEGORO 3 KEDUNGBANTENG</option>
-                        <option value="58">SMP MUHAMMADIYAH BEJI KEDUNGBANTENG</option>
-                        <option value="59">SMP NEGERI 1 KEDUNGBANTENG</option>
-                        <option value="60">SMP NEGERI 2 KEDUNGBANTENG</option>
-                        <option value="61">SMP NEGERI 3 KEDUNGBANTENG</option>
-                        <option value="62">SMP NEGERI 4 KEDUNGBANTENG</option>
-                        <option value="63">MTS MA`ARIF NU 1 SOKARAJA</option>
-                        <option value="64">SMP IT ANNIDA SOKARAJA</option>
-                        <option value="65">SMP MUHAMMADIYAH SOKARAJA</option>
-                        <option value="66">SMP NEGERI 1 SOKARAJA</option>
-                        <option value="67">SMP NEGERI 2 SOKARAJA</option>
-                        <option value="68">SMP YOS SUDARSO SOKARAJA</option>
-                        <option value="69">SMPN 3 SOKARAJA</option>
-                        <option value="70">MTS MA`ARIF NU 1 KEMBARAN</option>
-                        <option value="71">MTS SA RAODHOTUT THOLIBIN KEMBARAN</option>
-                        <option value="72">SMP GUNUNGJATI KEMBARAN</option>
-                        <option value="73">SMP ISLAM WALISONGO KEMBARAN</option>
-                        <option value="74">SMP MUHAMMADIYAH KEMBARAN</option>
-                        <option value="75">SMP NEGERI 1 KEMBARAN</option>
-                        <option value="76">SMP NEGERI 2 KEMBARAN</option>
-                        <option value="77">MTSN 3 BANYUMAS</option>
-                        <option value="78">MTS MA`ARIF NU 1 SUMBANG</option>
-                        <option value="79">SMP MUHAMMADIYAH SUMBANG</option>
-                        <option value="80">SMP N 4 SUMBANG</option>
-                        <option value="81">SMP NEGERI 1 SUMBANG</option>
-                        <option value="82">SMP NEGERI 2 SUMBANG</option>
-                        <option value="83">SMP PGRI SUMBANG</option>
-                        <option value="84">SMPN 3 SUMBANG</option>
-                        <option value="85">MTS AL MASRURIYAH BATURADEN</option>
-                        <option value="86">SMP BOARDING SCHOOL AL IRSYAD AL ISLAMIYYAH PURWOK</option>
-                        <option value="87">SMP NEGERI 1 BATURRADEN</option>
-                        <option value="88">SMP NEGERI 2 BATURRADEN</option>
-                        <option value="89">SMP PGRI BATURRADEN</option>
-                        <option value="90">MTS MA`ARIF NU 1 KARANGLEWAS</option>
-                        <option value="91">SMP MUHAMMADIYAH 1 KARANGLEWAS</option>
-                        <option value="92">SMP MUHAMMADIYAH 2 KARANGLEWAS</option>
-                        <option value="93">SMP NEGERI 1 KARANGLEWAS</option>
-                        <option value="94">SMP NEGERI 2 KARANGLEWAS</option>
-                        <option value="95">SMP NEGERI 3 KARANGLEWAS</option>
+                        <option value="SMP DIPONEGORO 1 PURWOKERTO">SMP DIPONEGORO 1 PURWOKERTO</option>
+                        <option value="SMP ISLAM TERPADU HARAPAN">SMP ISLAM TERPADU HARAPAN BUNDA</option>
+                        <option value="SMP MAARIF NU 03">SMP MAARIF NU 03 PURWOKERTO</option>
+                        <option value="SMP MAARIF NU 2">SMP MAARIF NU 2 PURWOKERTO</option>
+                        <option value="SMP MUHAMMADIYAH 1 PURWOKERTO">SMP MUHAMMADIYAH 1 PURWOKERTO</option>
+                        <option value="SMP MUHAMMADIYAH 2 PURWOKERTO">SMP MUHAMMADIYAH 2 PURWOKERTO</option>
+                        <option value="SMP NEGERI 5 PURWOKERTO">SMP NEGERI 5 PURWOKERTO</option>
+                        <option value="SMP NEGERI 7 PURWOKERTO">SMP NEGERI 7 PURWOKERTO</option>
+                        <option value="SMP TELKOM PURWOKERTO">SMP TELKOM PURWOKERTO</option>
+                        <option value="SMPS NASIONAL 3 BAHASA PUTERA HARAPAN">SMPS NASIONAL 3 BAHASA PUTERA HARAPAN</option>
+                        <option value="MTSN 1 BANYUMAS">MTSN 1 BANYUMAS</option>
+                        <option value="MTS MUHAMMADIYAH PURWOKERTO">MTS MUHAMMADIYAH PURWOKERTO</option>
+                        <option value="SMP AL IRSYAD AL ISLAMIYYAH">SMP AL IRSYAD AL ISLAMIYYAH</option>
+                        <option value="SMP BRUDERAN PURWOKERTO">SMP BRUDERAN PURWOKERTO</option>
+                        <option value="SMP KRISTEN 1 PURWOKERTO">SMP KRISTEN 1 PURWOKERTO</option>
+                        <option value="SMP MAARIF NU 1 PURWOKERTO">SMP MAARIF NU 1 PURWOKERTO</option>
+                        <option value="SMP NEGERI 1 PURWOKERTO">SMP NEGERI 1 PURWOKERTO</option>
+                        <option value="SMP NEGERI 2 PURWOKERTO">SMP NEGERI 2 PURWOKERTO</option>
+                        <option value="SMP NEGERI 6 PURWOKERTO">SMP NEGERI 6 PURWOKERTO</option>
+                        <option value="SMP NEGERI 8 PURWOKERTO">SMP NEGERI 8 PURWOKERTO</option>
+                        <option value="SMP PERMATA HATI">SMP PERMATA HATI</option>
+                        <option value="SMP SUSTERAN PURWOKERTO">SMP SUSTERAN PURWOKERTO</option>
+                        <option value="SMPN 3 PURWOKERTO">SMPN 3 PURWOKERTO</option>
+                        <option value="MTS AL HIDAYAH PURWOKERTO BARAT">MTS AL HIDAYAH PURWOKERTO BARAT</option>
+                        <option value="MTS MA`ARIF NU 1 PURWOKERTO BARAT">MTS MA`ARIF NU 1 PURWOKERTO BARAT</option>
+                        <option value="SMP BOARDING SCHOOL PUTRA HARAPAN PURWOKERTO">SMP BOARDING SCHOOL PUTRA HARAPAN PURWOKERTO</option>
+                        <option value="SMP GUNUNGJATI 1 PURWOKERTO">SMP GUNUNGJATI 1 PURWOKERTO</option>
+                        <option value="SMP GUNUNGJATI 2 PURWOKERTO">SMP GUNUNGJATI 2 PURWOKERTO</option>
+                        <option value="SMP NEGERI 4 PURWOKERTO">SMP NEGERI 4 PURWOKERTO</option>
+                        <option value="MTS AL - HIDAYAH PURWOKERTO">MTS AL - HIDAYAH PURWOKERTO</option>
+                        <option value="SMP MUHAMMADIYAH 3 PURWOKERTO">SMP MUHAMMADIYAH 3 PURWOKERTO</option>
+                        <option value="SMP NEGERI 9 PURWOKERTO">SMP NEGERI 9 PURWOKERTO</option>
+                        <option value="MTS AL IKHSAN BEJI KEDUNGBANTENG">MTS AL IKHSAN BEJI KEDUNGBANTENG</option>
+                        <option value="MTS MA`ARIF NU 1 KEDUNGBANTENG">MTS MA`ARIF NU 1 KEDUNGBANTENG</option>
+                        <option value="SMP DIPONEGORO 3 KEDUNGBANTENG">SMP DIPONEGORO 3 KEDUNGBANTENG</option>
+                        <option value="SMP MUHAMMADIYAH BEJI KEDUNGBANTENG">SMP MUHAMMADIYAH BEJI KEDUNGBANTENG</option>
+                        <option value="SMP NEGERI 1 KEDUNGBANTENG">SMP NEGERI 1 KEDUNGBANTENG</option>
+                        <option value="SMP NEGERI 2 KEDUNGBANTENG">SMP NEGERI 2 KEDUNGBANTENG</option>
+                        <option value="SMP NEGERI 3 KEDUNGBANTENG">SMP NEGERI 3 KEDUNGBANTENG</option>
+                        <option value="SMP NEGERI 4 KEDUNGBANTENG">SMP NEGERI 4 KEDUNGBANTENG</option>
+                        <option value="MTS MA`ARIF NU 1 SOKARAJA">MTS MA`ARIF NU 1 SOKARAJA</option>
+                        <option value="SMP IT ANNIDA SOKARAJA">SMP IT ANNIDA SOKARAJA</option>
+                        <option value="SMP MUHAMMADIYAH SOKARAJA">SMP MUHAMMADIYAH SOKARAJA</option>
+                        <option value="SMP NEGERI 1 SOKARAJA">SMP NEGERI 1 SOKARAJA</option>
+                        <option value="SMP NEGERI 2 SOKARAJA">SMP NEGERI 2 SOKARAJA</option>
+                        <option value="SMP YOS SUDARSO SOKARAJA">SMP YOS SUDARSO SOKARAJA</option>
+                        <option value="SMPN 3 SOKARAJA">SMPN 3 SOKARAJA</option>
+                        <option value="MTS MA`ARIF NU 1 KEMBARAN">MTS MA`ARIF NU 1 KEMBARAN</option>
+                        <option value="MTS SA RAODHOTUT THOLIBIN KEMBARAN71">MTS SA RAODHOTUT THOLIBIN KEMBARAN</option>
+                        <option value="SMP GUNUNGJATI KEMBARAN">SMP GUNUNGJATI KEMBARAN</option>
+                        <option value="SMP ISLAM WALISONGO KEMBARAN">SMP ISLAM WALISONGO KEMBARAN</option>
+                        <option value="SMP MUHAMMADIYAH KEMBARAN">SMP MUHAMMADIYAH KEMBARAN</option>
+                        <option value="SMP NEGERI 1 KEMBARAN">SMP NEGERI 1 KEMBARAN</option>
+                        <option value="SMP NEGERI 2 KEMBARAN">SMP NEGERI 2 KEMBARAN</option>
+                        <option value="MTSN 3 BANYUMAS">MTSN 3 BANYUMAS</option>
+                        <option value="MTS MA`ARIF NU 1 SUMBANG">MTS MA`ARIF NU 1 SUMBANG</option>
+                        <option value="SMP MUHAMMADIYAH SUMBANG">SMP MUHAMMADIYAH SUMBANG</option>
+                        <option value="SMP N 4 SUMBANG">SMP N 4 SUMBANG</option>
+                        <option value="SMP NEGERI 1 SUMBANG">SMP NEGERI 1 SUMBANG</option>
+                        <option value="SMP NEGERI 2 SUMBANG">SMP NEGERI 2 SUMBANG</option>
+                        <option value="SMP PGRI SUMBANG">SMP PGRI SUMBANG</option>
+                        <option value="SMPN 3 SUMBANG">SMPN 3 SUMBANG</option>
+                        <option value="MTS AL MASRURIYAH BATURADEN">MTS AL MASRURIYAH BATURADEN</option>
+                        <option value="SMP BOARDING SCHOOL AL IRSYAD AL ISLAMIYYAH PURWOK">SMP BOARDING SCHOOL AL IRSYAD AL ISLAMIYYAH PURWOKERTO</option>
+                        <option value="SMP NEGERI 1 BATURRADEN">SMP NEGERI 1 BATURRADEN</option>
+                        <option value="SMP NEGERI 2 BATURRADEN">SMP NEGERI 2 BATURRADEN</option>
+                        <option value="SMP PGRI BATURRADEN">SMP PGRI BATURRADEN</option>
+                        <option value="MTS MA`ARIF NU 1 KARANGLEWAS">MTS MA`ARIF NU 1 KARANGLEWAS</option>
+                        <option value="SMP MUHAMMADIYAH 1 KARANGLEWAS">SMP MUHAMMADIYAH 1 KARANGLEWAS</option>
+                        <option value="SMP MUHAMMADIYAH 2 KARANGLEWAS">SMP MUHAMMADIYAH 2 KARANGLEWAS</option>
+                        <option value="SMP NEGERI 1 KARANGLEWAS">SMP NEGERI 1 KARANGLEWAS</option>
+                        <option value="SMP NEGERI 2 KARANGLEWAS">SMP NEGERI 2 KARANGLEWAS</option>
+                        <option value="SMP NEGERI 3 KARANGLEWAS">SMP NEGERI 3 KARANGLEWAS</option>
                         <option value="0">Sekolah lainnya</option>
                     </select>
                 </div>
                 <div class="input-group" id="otherSchoolInput" style="display:none;">
-                    <label for="otherSchool">Nama Sekolah Lainnya</label>
-                    <input type="text" id="otherSchool" name="otherSchool" />
+                    <label for="asal_sekolah">Nama Sekolah Lainnya</label>
+                    <input type="text" id="asal_sekolah" name="asal_sekolah" />
                 </div>
                 <div class="input-group">
                     <label for="">JENIS KELAMIN</label>
@@ -170,8 +171,8 @@
                     <label for="">JENIS TINGGAL</label>
                     <select name="jenis_tinggal" id="">
                         <option selected="" disabled="">-- Pilih Jenis Tinggal --</option>
-                        <option value="">Kost</option>
-                        <option value="">Orang Tua</option>
+                        <option value="Kost">Kost</option>
+                        <option value="Orang Tu">Orang Tua</option>
                     </select>
                 </div>
                 <div class="input-group">
@@ -241,15 +242,15 @@
                     <label for="">SUMBER REKOMENDASI</label>
                     <select name="sumber_rekomendasi" id="">
                         <option selected="" disabled="">-- Pilih Sumber Rekomendasi --</option>
-                        <option value="">Orang Tua</option>
-                        <option value="">Teman</option>
-                        <option value="">Alumni</option>
-                        <option value="">Saudara</option>
-                        <option value="">Kakak Kelas</option>
-                        <option value="">Kerabat</option>
-                        <option value="">Leaflet/Brosur</option>
-                        <option value="">Guru BK</option>
-                        <option value="">Sekolah</option>
+                        <option value="Orang Tua">Orang Tua</option>
+                        <option value="Teman">Teman</option>
+                        <option value="Alumni">Alumni</option>
+                        <option value="Saudara">Saudara</option>
+                        <option value="Kakak Kelas">Kakak Kelas</option>
+                        <option value="Kerabat">Kerabat</option>
+                        <option value="Leaflet/Brosur">Leaflet/Brosur</option>
+                        <option value="Guru">Guru BK</option>
+                        <option value="Sekolah">Sekolah</option>
                     </select>
                 </div>
                 <div class="input-group">

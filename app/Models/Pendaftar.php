@@ -43,7 +43,7 @@ class Pendaftar extends Model
         'sumber_rekomendasi',
         'nama_sumber_rekomendasi',
         'user_id',
-        'lulus'
+        'lulus',
     ];
 
     public function user()

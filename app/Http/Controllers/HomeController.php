@@ -7,7 +7,6 @@ use App\Models\Berita;
 use App\Models\Ekstrakulikuler;
 use App\Models\Fasilitas;
 use App\Models\Guru;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
