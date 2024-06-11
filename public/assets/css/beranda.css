@@ -484,6 +484,7 @@ main section#news .cards .card {
   height: 12cm;
   background-color: white;
   border-radius: 20px;
+    margin-top: 1cm;
 }
 main section#news .cards .card img.image {
   width: 100%;

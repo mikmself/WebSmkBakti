@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',[\App\Http\Controllers\HomeController::class,'index'])->name('index');
+Route::get('/semua-berita',[\App\Http\Controllers\HomeController::class,'semuaBerita'])->name('semuaBerita');
+Route::get('/show-berita/{slug}',[\App\Http\Controllers\HomeController::class,'showBerita'])->name('showBerita');
 Route::get('/alur-pendaftaran',[\App\Http\Controllers\HomeController::class,'alurPendaftaran'])->name('alurPendaftaran');
 Route::get('/beasiswa',[\App\Http\Controllers\HomeController::class,'beasiswa'])->name('beasiswa');
 Route::get('/data-guru',[\App\Http\Controllers\HomeController::class,'dataGuru'])->name('dataGuru');

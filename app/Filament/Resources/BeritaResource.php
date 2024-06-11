@@ -44,7 +44,8 @@ class BeritaResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('foto')
+                Tables\Columns\ImageColumn::make('foto')
+                    ->height(200)
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

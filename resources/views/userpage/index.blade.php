@@ -84,37 +84,18 @@
     <section id="news">
         <div class="header">
             <h1 class="title">Berita Terbaru</h1>
-            <a href="" class="btn-more">Lebih Banyak</a>
+            <a href="{{route('semuaBerita')}}" class="btn-more">Lebih Banyak</a>
         </div>
         <div class="cards">
-            <div class="card">
-                <img src="/assets/img/content/berita/berita1.png" alt="" class="image">
-                <div class="text">
-                    <h1 class="title">Upacara Hari Pahlawan Tahun 2018</h1>
-                    <p class="content">Marilah kita panjatkan puji dan syukur kehadirat Allah SWT-Tuhan  Yang Maha Esa, karena atas limpahan rahmat dan karunia-Nya, bangsa Indonesia pada ...</p>
+            @foreach($dataBerita as $berita)
+                <div class="card" style="height: auto">
+                    <img src="/storage/{{$berita->foto}}" alt="" class="image">
+                    <div class="text">
+                        <h1 class="title"><a href="{{route('showBerita',$berita->slug)}}">{{$berita->judul}}</a></h1>
+                        <p class="content">{!! \Illuminate\Support\Str::limit($berita->isi, 200) !!}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="/assets/img/content/berita/berita2.png" alt="" class="image">
-                <div class="text">
-                    <h1 class="title">Seleksi Calon Siswa UT School Angkatan 26, 27 dan 28 Tahun 2019</h1>
-                    <p class="content">UT School bekerjasama dengan SMK Bakti Purwokerto akan melaksanakan seleksi Calon Siswa UT School Angkatan 26, 27 dan 28 pada awal tahun 2019 nanti...</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/assets/img/content/berita/berita3.png" alt="" class="image">
-                <div class="text">
-                    <h1 class="title">Belajar Sehari Di Luar Kelas</h1>
-                    <p class="content">Menindaklanjuti Surat dari Cabang Dinas Pendidikan Wilayah X Pemerintah Provinsi Jawa Tengah nomor : 427/01520/XI/2019 dan Surat dari Dinas Pemberd...</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/assets/img/content/berita/berita4.png" alt="" class="image">
-                <div class="text">
-                    <h1 class="title">Upacara Hari Pahlawan Tahun 2019</h1>
-                    <p class="content">Wanareja – SMK Bakti Purwokerto pada hari Minggu, 10 November 2019 walaupun bertepatan dengan hari libur tetap melaksanakan Upacara Mempering...</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
     <section id="event">
