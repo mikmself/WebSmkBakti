@@ -20,7 +20,7 @@
                 </div>
                 <div class="input-group">
                     <label for="">Kompetensi Keahlian</label>
-                    <select class="" id="">
+                    <select class="" id="" name="kompetensi-keahlian">
                         <option selected="" disabled="">-- Pilih Kompetensi Keahlian --</option>
                         <option value="Akutansi Keuangan dan Lembaga">Akutansi Keuangan dan Lembaga</option>
                         <option value="Otomatisasi Tata Kelola Perkantoran">Otomatisasi Tata Kelola Perkantoran</option>
@@ -29,21 +29,21 @@
                     </select>
                 </div>
                 <h1 class="title-form">DATA DIRI SISWA</h1>
-                <div class="input-group">
+                <div class="input-group" b>
                     <label for="">Nama Lengkap</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="nama_lengkap" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">Tempat Lahir</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="tempat_lahir" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">Tanggal Lahir</label>
-                    <input type="date" name="" id="" />
+                    <input type="date" name="tanggal_lahir" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">Asal Sekolah SMP/MTS</label>
-                    <select name="" id="asalsekolah">
+                    <select name="asal_sekolah" id="asalsekolah">
                         <option selected="" disabled="">-- Pilih sekolah --</option>
                         <option value="23">SMP DIPONEGORO 1 PURWOKERTO</option>
                         <option value="24">SMP ISLAM TERPADU HARAPAN BUNDA</option>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="input-group">
                     <label for="">JENIS KELAMIN</label>
-                    <select name="" id="">
+                    <select name="jenis_kelamin" id="">
                         <option selected="" disabled="">-- Pilih Jenis Kelamin --</option>
                         <option value="">Laki-laki</option>
                         <option value="">Perempuan</option>
@@ -135,40 +135,40 @@
                 </div>
                 <div class="input-group">
                     <label for="">AGAMA</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="agama" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">KEWARGANEGARAAN</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="kewarganegaraan" id="" />
                 </div>
                 <h1 class="title-form">ALAMAT RUMAH</h1>
                 <div class="input-group">
                     <label for="">JALAN</label>
-                    <input type="text" name="" id="" />
-                </div>
-                <div class="input-group">
-                    <label for="">KELURAHAN/DESA</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="jalan" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">RT/RW</label>
                     <input type="text" name="" id="" />
                 </div>
                 <div class="input-group">
+                    <label for="">KELURAHAN/DESA</label>
+                    <input type="text" name="kelurahan/desa" id="" />
+                </div>
+                <div class="input-group">
                     <label for="">KECAMATAN</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="kecamatan" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">KABUPATEN/KOTA</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="kota/kabupaten" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">PROVINSI</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="provinsi" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">JENIS TINGGAL</label>
-                    <select name="" id="">
+                    <select name="jenis_tinggal" id="">
                         <option selected="" disabled="">-- Pilih Jenis Tinggal --</option>
                         <option value="">Kost</option>
                         <option value="">Orang Tua</option>
@@ -176,70 +176,70 @@
                 </div>
                 <div class="input-group">
                     <label for="">TELEPHONE/HP</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="telephone" id="" />
                 </div>
                 <h1 class="title-form">NAMA ORANG TUA/WALI (AYAH)</h1>
                 <div class="input-group">
                     <label for="">NAMA AYAH</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="nama_ayah" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">NIK</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="nik_ayah" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">TANGGAL LAHIR</label>
-                    <input type="text" name="" id="" />
+                    <input type="date" name="tanggal_lahir_ayah" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">PENDIDIKAN</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="pendidikan_ayah" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">PEKERJAAN</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="pekerjaan_ayah" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">PENGHASILAN</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="penghasilan_ayah" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">NO. HP</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="telephone_ayah" id="" />
                 </div>
                 <h1 class="title-form">NAMA ORANG TUA/WALI (IBU)</h1>
                 <div class="input-group">
                     <label for="">NAMA IBU</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="nama_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">NIK</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="nik_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">TANGGAL LAHIR</label>
-                    <input type="text" name="" id="" />
+                    <input type="date" name="tanggal_lahir_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">PENDIDIKAN</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="pendidikan_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">PEKERJAAN</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="pekerjaan_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">PENGHASILAN</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="penghasilan_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">NO. HP</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="telephone_ibu" id="" />
                 </div>
                 <h1 class="title-form">REKOMENDASI</h1>
                 <div class="input-group">
                     <label for="">SUMBER REKOMENDASI</label>
-                    <select name="" id="">
+                    <select name="sumber_rekomendasi" id="">
                         <option selected="" disabled="">-- Pilih Sumber Rekomendasi --</option>
                         <option value="">Orang Tua</option>
                         <option value="">Teman</option>
@@ -254,16 +254,16 @@
                 </div>
                 <div class="input-group">
                     <label for="">NAMA SUMBER REKOMENDASI</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="nama_sumber_rekomendasi" id="" />
                 </div>
                 <h1 class="title-form">DATA AKUN</h1>
                 <div class="input-group">
                     <label for="">EMAIL</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="email" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">PASSWORD</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="password" id="" />
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" name="" id="" />

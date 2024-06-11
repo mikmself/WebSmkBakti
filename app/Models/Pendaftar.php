@@ -19,6 +19,7 @@ class Pendaftar extends Model
         'agama',
         'kewarganegaraan',
         'jalan',
+        'rt/rw',
         'kelurahan/desa',
         'kecamatan',
         'kota/kabupaten',

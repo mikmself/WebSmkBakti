@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('kewarganegaraan');
             // Alamat siswa
             $table->string('jalan');
+            $table->string('rt/rw');
             $table->string('kelurahan/desa');
             $table->string('kecamatan');
             $table->string('kota/kabupaten');
