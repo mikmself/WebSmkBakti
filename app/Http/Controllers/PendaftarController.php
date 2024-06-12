@@ -10,6 +10,29 @@ use Illuminate\Support\Facades\Validator;
 
 class PendaftarController extends Controller
 {
+    public function download($id){
+        if($id == 1){
+            $file = public_path()."/file/formulir.pdf";
+            $headers = array(
+                'Content-Type: application/pdf',
+            );
+            return response()->download($file, 'pendaftaran.pdf', $headers);
+        }elseif($id ==2){
+            $file = public_path()."/file/ketentuan.pdf";
+            $headers = array(
+                'Content-Type: application/docx',
+            );
+            return response()->download($file, 'ketentuan.pdf', $headers);
+        }elseif($id == 3){
+            $file = public_path()."/file/berkas.pdf";
+            $headers = array(
+                'Content-Type: application/xlsx',
+            );
+            return response()->download($file, 'berkas.pdf', $headers);
+        }else{
+            return redirect()->back();
+        }
+    }
     public function daftarWebsite(Request $request){
         try {
             $validator = Validator::make($request->all(),[

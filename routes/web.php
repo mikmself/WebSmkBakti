@@ -18,3 +18,5 @@ Route::get('/visi-misi',[\App\Http\Controllers\HomeController::class,'visiMisi']
 
 Route::post('/daftar-website',[\App\Http\Controllers\PendaftarController::class,'daftarWebsite'])->name('daftarWebsite');
 Route::post('/kontak',[\App\Http\Controllers\KontakController::class,'store'])->name('kontak.store');
+
+Route::get('/download/{id}',[\App\Http\Controllers\PendaftarController::class,'download'])->name('download');

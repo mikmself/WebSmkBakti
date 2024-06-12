@@ -20,19 +20,31 @@
                     <td class="pendek">1.</td>
                     <td>Formulir Pendaftaran Calon Peserta Didik Baru</td>
                     <td>SMK BAKTI Purwokerto school</td>
-                    <td class="pendek gambar"><img src="/assets/img/icon/download.png" alt=""></td>
+                    <td class="pendek gambar">
+                        <a href="{{route('download',1)}}">
+                            <img src="/assets/img/icon/download.png" alt="">
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="pendek">2.</td>
                     <td>Ketentuan Biaya Masuk Calon Peserta Didik Baru</td>
                     <td>SMK BAKTI Purwokerto school</td>
-                    <td class="pendek gambar"><img src="/assets/img/icon/download.png" alt=""></td>
+                    <td class="pendek gambar">
+                        <a href="{{route('download',2)}}">
+                            <img src="/assets/img/icon/download.png" alt="">
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="pendek">3.</td>
                     <td>Berkas Persyaratan Pendaftaran Calon Peserta Didik Baru</td>
                     <td>SMK BAKTI Purwokerto school</td>
-                    <td class="pendek gambar"><img src="/assets/img/icon/download.png" alt=""></td>
+                    <td class="pendek gambar">
+                        <a href="{{route('download',3)}}">
+                            <img src="/assets/img/icon/download.png" alt="">
+                        </a>
+                    </td>
                 </tr>
             </table>
             <div class="whatsapp">
