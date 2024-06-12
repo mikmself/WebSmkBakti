@@ -24,7 +24,7 @@
         </div>
     </div>
     <a href="{{route('dataGuru')}}">DATA GURU</a>
-    <a href="">GALERI</a>
+    <a href="/galeri">GALERI</a>
     <div class="dropdown">
         <button class="dropbtn">PPDB
             &#x25BC;
@@ -56,7 +56,7 @@
                 <a href="{{route('strukturOrganisasi')}}">STRUKTUR ORGANISASI</a>
             </div>
             <a href="{{route('dataGuru')}}" class="item">DATA GURU</a>
-            <a href="" class="item">GALERI</a>
+            <a href="/galeri" class="item">GALERI</a>
             <a class="item" id="dropdown2">PPDB &#x25BC;</a>
             <div class="dropdown-content2" id="dropdown-content2">
                 <a href="{{route('alurPendaftaran')}}">ALUR PENDAFTARAN</a>

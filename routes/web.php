@@ -7,6 +7,7 @@ Route::get('/semua-berita',[\App\Http\Controllers\HomeController::class,'semuaBe
 Route::get('/show-berita/{slug}',[\App\Http\Controllers\HomeController::class,'showBerita'])->name('showBerita');
 Route::get('/alur-pendaftaran',[\App\Http\Controllers\HomeController::class,'alurPendaftaran'])->name('alurPendaftaran');
 Route::get('/beasiswa',[\App\Http\Controllers\HomeController::class,'beasiswa'])->name('beasiswa');
+Route::get('/galeri',[\App\Http\Controllers\HomeController::class,'galeri'])->name('galeri');
 Route::get('/data-guru',[\App\Http\Controllers\HomeController::class,'dataGuru'])->name('dataGuru');
 Route::get('/ekstrakulikuler',[\App\Http\Controllers\HomeController::class,'ekstrakulikuler'])->name('ekstrakulikuler');
 Route::get('/fasilitas',[\App\Http\Controllers\HomeController::class,'fasilitas'])->name('fasilitas');

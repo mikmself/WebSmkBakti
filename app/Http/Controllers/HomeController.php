@@ -6,6 +6,7 @@ use App\Models\Beasiswa;
 use App\Models\Berita;
 use App\Models\Ekstrakulikuler;
 use App\Models\Fasilitas;
+use App\Models\Galeri;
 use App\Models\Guru;
 
 class HomeController extends Controller
@@ -24,6 +25,10 @@ class HomeController extends Controller
     }
     public function alurPendaftaran(){
         return view('userpage.alurpendaftaran');
+    }
+    public function galeri(){
+        $dataGaleri = Galeri::all();
+        return view('userpage.galeri',compact('dataGaleri'));
     }
     public function beasiswa(){
         $dataBeasiswa = Beasiswa::all();
