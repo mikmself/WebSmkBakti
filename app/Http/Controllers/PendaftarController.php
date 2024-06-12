@@ -50,7 +50,7 @@ class PendaftarController extends Controller
                 foreach ($validator->errors()->all() as $error) {
                     toast($error,'error');
                 }
-                return redirect()->back();
+                return redirect()->back()->withInput($request->all());
             }
             DB::beginTransaction();
             $user = User::create([
@@ -68,10 +68,10 @@ class PendaftarController extends Controller
                 'agama' => $request->input('agama'),
                 'kewarganegaraan' => $request->input('kewarganegaraan'),
                 'jalan' => $request->input('jalan'),
-                'rt/rw' => $request->input('rw'),
-                'kelurahan/desa' => $request->input('desa'),
+                'rt/rw' => $request->input('rt/rw'),
+                'kelurahan/desa' => $request->input('kelurahan/desa'),
                 'kecamatan' => $request->input('kecamatan'),
-                'kota/kabupaten' => $request->input('kabupaten'),
+                'kota/kabupaten' => $request->input('kota/kabupaten'),
                 'provinsi' => $request->input('provinsi'),
                 'jenis_tinggal' => $request->input('jenis_tinggal'),
                 'telephone' => $request->input('telephone'),
@@ -98,7 +98,9 @@ class PendaftarController extends Controller
             toast('Data berhasil disimpan','success');
             return redirect()->back();
         }catch (\Exception $e){
+            DB::rollBack();
             toast($e->getMessage(),'error');
+            return redirect()->back();
         }
     }
 }

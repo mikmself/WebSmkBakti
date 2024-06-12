@@ -21,7 +21,7 @@
                 </div>
                 <div class="input-group">
                     <label for="">Kompetensi Keahlian</label>
-                    <select class="" id="" name="kompetensi-keahlian">
+                    <select class="" id="" name="kompetensi_keahlian">
                         <option selected="" disabled="">-- Pilih Kompetensi Keahlian --</option>
                         <option value="Akutansi Keuangan dan Lembaga">Akutansi Keuangan dan Lembaga</option>
                         <option value="Otomatisasi Tata Kelola Perkantoran">Otomatisasi Tata Kelola Perkantoran</option>
@@ -123,15 +123,15 @@
                     </select>
                 </div>
                 <div class="input-group" id="otherSchoolInput" style="display:none;">
-                    <label for="asal_sekolah">Nama Sekolah Lainnya</label>
-                    <input type="text" id="asal_sekolah" name="asal_sekolah" />
+                    <label for="asal_sekolah_lain">Nama Sekolah Lainnya</label>
+                    <input type="text" id="asal_sekolah_lain" name="asal_sekolah_lain" />
                 </div>
                 <div class="input-group">
                     <label for="">JENIS KELAMIN</label>
                     <select name="jenis_kelamin" id="">
                         <option selected="" disabled="">-- Pilih Jenis Kelamin --</option>
-                        <option value="">Laki-laki</option>
-                        <option value="">Perempuan</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
                     </select>
                 </div>
                 <div class="input-group">
@@ -149,7 +149,7 @@
                 </div>
                 <div class="input-group">
                     <label for="">RT/RW</label>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="rt/rw" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">KELURAHAN/DESA</label>
@@ -287,9 +287,9 @@
 
             $('#asalsekolah').on('change', function() {
                 if ($(this).val() == '0') {
-                    $('#otherSchoolInput').show();
+                    $('#asal_sekolah_lain').show();
                 } else {
-                    $('#otherSchoolInput').hide();
+                    $('#asal_sekolah_lain').hide();
                 }
             });
         });
