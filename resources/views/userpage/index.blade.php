@@ -52,7 +52,7 @@
                 <div class="text">
                     <h1 class="title">#TKJT</h1>
                     <p>Teknik Komputer Jaringan dan Telekomunikasi</p>
-                    <a href="" class="btn-next">Selanjutnya>></a>
+                    <a href="{{route('detailJurusan','tkjt')}}" class="btn-next">Selanjutnya>></a>
                 </div>
             </div>
             <div class="card mplb">
@@ -60,7 +60,7 @@
                 <div class="text">
                     <h1 class="title">#MPLB</h1>
                     <p>Management Perkantoran dan Layanan Bisnis</p>
-                    <a href="" class="btn-next">Selanjutnya>></a>
+                    <a href="{{route('detailJurusan','mplb')}}" class="btn-next">Selanjutnya>></a>
                 </div>
             </div>
             <div class="card akl">
@@ -68,7 +68,7 @@
                 <div class="text">
                     <h1 class="title">#AKL</h1>
                     <p>Akutansi Keuangan Lembaga</p>
-                    <a href="" class="btn-next">Selanjutnya>></a>
+                    <a href="{{route('detailJurusan','akl')}}" class="btn-next">Selanjutnya>></a>
                 </div>
             </div>
             <div class="card dkv">
@@ -76,7 +76,7 @@
                 <div class="text">
                     <h1 class="title">#DKV</h1>
                     <p>Desain Komunikasi Visual</p>
-                    <a href="" class="btn-next">Selanjutnya>></a>
+                    <a href="{{route('detailJurusan','dkv')}}" class="btn-next">Selanjutnya>></a>
                 </div>
             </div>
         </div>

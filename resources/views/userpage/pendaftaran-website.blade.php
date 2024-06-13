@@ -19,6 +19,7 @@
                 <div class="title-form">
                     <h1 class="text">DATA CALON SISWA</h1>
                 </div>
+                <h1 class="title-form">PROGRAM STUDI</h1>
                 <div class="input-group">
                     <label for="">Kompetensi Keahlian</label>
                     <select class="" id="" name="kompetensi_keahlian">
@@ -44,7 +45,7 @@
                 </div>
                 <div class="input-group">
                     <label for="">Asal Sekolah SMP/MTS</label>
-                    <select name="asal_sekolah" id="asalsekolah">
+                    <select name="asal_sekolah" id="asalsekolah" style="height: 1.2cm!important; border-radius: 0!important;">
                         <option selected="" disabled="">-- Pilih sekolah --</option>
                         <option value="SMP DIPONEGORO 1 PURWOKERTO">SMP DIPONEGORO 1 PURWOKERTO</option>
                         <option value="SMP ISLAM TERPADU HARAPAN">SMP ISLAM TERPADU HARAPAN BUNDA</option>
@@ -256,15 +257,6 @@
                 <div class="input-group">
                     <label for="">NAMA SUMBER REKOMENDASI</label>
                     <input type="text" name="nama_sumber_rekomendasi" id="" />
-                </div>
-                <h1 class="title-form">DATA AKUN</h1>
-                <div class="input-group">
-                    <label for="">EMAIL</label>
-                    <input type="text" name="email" id="" />
-                </div>
-                <div class="input-group">
-                    <label for="">PASSWORD</label>
-                    <input type="text" name="password" id="" />
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" name="" id="" />
