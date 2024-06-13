@@ -88,7 +88,7 @@
         </div>
         <div class="cards">
             @foreach($dataBerita as $berita)
-                <div class="card" style="height: auto">
+                <div class="card">
                     <img src="/storage/{{$berita->foto}}" alt="" class="image">
                     <div class="text">
                         <h1 class="title"><a href="{{route('showBerita',$berita->slug)}}">{{$berita->judul}}</a></h1>

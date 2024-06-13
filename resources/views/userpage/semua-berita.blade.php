@@ -4,7 +4,7 @@
     <section id="news" style="margin-top: 0px">
         <div class="cards">
             @foreach($dataBerita as $berita)
-                <div class="card" style="height: auto">
+                <div class="card" >
                     <img src="/storage/{{$berita->foto}}" alt="" class="image">
                     <div class="text">
                         <h1 class="title">{{$berita->judul}}</h1>

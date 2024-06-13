@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     @yield('style')
-    <link rel="stylesheet" href="/assets/css/beranda.css">
-    <link rel="stylesheet" href="/assets/css/responsif.css">
+    <link rel="stylesheet" href="/assets/scss/style.css">
     <title>SMK BAKTI | @yield('title')</title>
 </head>
 <body>
@@ -24,7 +23,7 @@
         </div>
     </div>
     <a href="{{route('dataGuru')}}">DATA GURU</a>
-    <a href="/galeri">GALERI</a>
+    <a href="{{route('galeri')}}">GALERI</a>
     <div class="dropdown">
         <button class="dropbtn">PPDB
             &#x25BC;
@@ -85,7 +84,7 @@
                     </div>
                     <div class="fill">
                         <p>Hours Of Operation</p>
-                        <p>Mon-Fri:  9AM - 5PM</p>
+                        <p>Mon-Fri:  8AM - 12PM</p>
                     </div>
                 </div>
                 <div class="content">
@@ -94,7 +93,7 @@
                     </div>
                     <div class="fill">
                         <p>24/7 Emergency Service</p>
-                        <p>(205) 484-9624</p>
+                        <p>081326830861</p>
                     </div>
                 </div>
                 <div class="content">
@@ -102,8 +101,8 @@
                         <img src="/assets/img/icon/location.png" alt="">
                     </div>
                     <div class="fill">
-                        <p>HService Area</p>
-                        <p>Birmingham, AL</p>
+                        <p>Service Area</p>
+                        <p>Jl. DR. Soeparno No.13, Purwokerto Wetan, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53111</p>
                     </div>
                 </div>
             </div>

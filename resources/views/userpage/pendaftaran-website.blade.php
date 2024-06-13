@@ -269,10 +269,7 @@
                 <div class="checkbox">
                     <input type="checkbox" name="" id="" />
                     <p class="desc">
-                        Saya menyatakan bahwa informasi yang saya tulis dan unggah di
-                        atas adalah benar dan saya bersedia mengikuti aturan yang
-                        berlaku dalam penyelenggaraan PPDB ini, termasuk
-                        didiskualifikasi jika data yang saya tulis tidak benar.
+                        Saya menyatakan bahwa informasi yang saya tulis dan unggah di atas adalah benar dan saya bersedia mengikuti aturan yang berlaku dalam penyelenggaraan PPDB ini, termasuk didiskualifikasi jika data yang saya tulis tidak benar. Untuk informasi selanjutnya akan di beritahukan melalui berita yang ada di website kami.
                     </p>
                 </div>
                 <button type="submit">JOIN NOW</button>
