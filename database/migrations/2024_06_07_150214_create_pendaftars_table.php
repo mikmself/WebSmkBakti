@@ -48,7 +48,7 @@ return new class extends Migration
             // Rekomendasi
             $table->string('sumber_rekomendasi');
             $table->string('nama_sumber_rekomendasi');
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('cascade');
             $table->string('lulus')->nullable();
             $table->timestamps();
         });

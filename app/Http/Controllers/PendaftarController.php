@@ -36,8 +36,6 @@ class PendaftarController extends Controller
     public function daftarWebsite(Request $request){
         try {
             $validator = Validator::make($request->all(),[
-                'email' => 'required|email|unique:users,email',
-                'password' => 'required',
                 'kompetensi_keahlian' => 'required',
                 'nama_lengkap' => 'required',
                 'tempat_lahir' => 'required',
@@ -76,11 +74,6 @@ class PendaftarController extends Controller
                 return redirect()->back()->withInput($request->all());
             }
             DB::beginTransaction();
-            $user = User::create([
-                'name' => $request->input('nama_lengkap'),
-                'email' => $request->input('email'),
-                'password' => bcrypt($request->input('password')),
-            ]);
             Pendaftar::create([
                 'kompetensi_keahlian' => $request->input('kompetensi_keahlian'),
                 'nama_lengkap' => $request->input('nama_lengkap'),
@@ -114,7 +107,7 @@ class PendaftarController extends Controller
                 'telephone_ibu' => $request->input('telephone_ibu'),
                 'sumber_rekomendasi' => $request->input('sumber_rekomendasi'),
                 'nama_sumber_rekomendasi' => $request->input('nama_sumber_rekomendasi'),
-                'user_id' => $user->id,
+                'user_id' => null,
                 'lulus' => "false",
             ]);
             DB::commit();
