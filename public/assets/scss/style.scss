@@ -537,7 +537,6 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
         background-color: $background-color_1;
         padding: 2cm;
         h1.title {
@@ -551,21 +550,88 @@ main {
             background-color: $background-color_11;
             margin-top: 0.5cm;
         }
-        .content {
+        .slider {
+            position: relative;
             width: 80%;
-            margin-top: 1cm;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-items: center;
-            p.desc {
-                width: 50%;
-                background-color: $background-color_7;
-                font-family: $font-family_2;
+            overflow: hidden;
+            .slider-wrapper {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                p.desc {
+                    width: 50%;
+                    background-color: $background-color_7;
+                    font-family: $font-family_2;
+                    font-size: 25px;
+                    padding: 2cm;
+                    border-radius: 30px;
+                }
+                img.image {
+                    width: 40%;
+                }
+            }
+            .prev, .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $background-color_11;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+            .prev {
+                left: 10px;
+            }
+            .next {
+                right: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 820px) {
+        section#testimoni {
+            padding: 2cm 0px;
+            hr.line {
+                width: 70%;
+            }
+            .slider .slide {
+                flex-direction: column-reverse;
+                align-items: center;
+                p.desc {
+                    width: 100%;
+                    font-size: 20px;
+                    padding: 0.8cm;
+                }
+                img.image {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 512px) {
+        section#testimoni {
+            h1.title {
                 font-size: 25px;
-                padding: 2cm;
-                border-radius: 30px;
+            }
+            hr.line {
+                width: 55%;
+            }
+            .slider {
+                width: 95%;
+                .slide {
+                    p.desc {
+                        padding: 0.5cm;
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
@@ -1838,24 +1904,6 @@ footer {
                 }
             }
         }
-        section#testimoni {
-            padding: 2cm 0px;
-            hr.line {
-                width: 70%;
-            }
-            .content {
-                flex-direction: column-reverse;
-                align-items: center;
-                p.desc {
-                    width: 100%;
-                    font-size: 20px;
-                    padding: 0.8cm;
-                }
-                img.image {
-                    width: 60%;
-                }
-            }
-        }
         section#contact {
             flex-direction: column-reverse;
             .left {
@@ -2362,21 +2410,6 @@ footer {
             .right {
                 p.desc {
                     font-size: 20px;
-                }
-            }
-        }
-        section#testimoni {
-            h1.title {
-                font-size: 25px;
-            }
-            hr.line {
-                width: 55%;
-            }
-            .content {
-                width: 95%;
-                p.desc {
-                    padding: 0.5cm;
-                    font-size: 16px;
                 }
             }
         }

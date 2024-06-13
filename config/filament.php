@@ -13,7 +13,7 @@ return [
     | This will allow your users to receive real-time notifications.
     |
     */
-
+    'dark_mode' => false,
     'broadcasting' => [
 
         // 'echo' => [
