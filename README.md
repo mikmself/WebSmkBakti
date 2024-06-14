@@ -9,6 +9,8 @@ Website untuk sekolah SMK BAKTI PURWOKERTO, menampung profil sekolah antara lain
 - Daftar Ekstrakulikuler
 - Struktur Organisasi
 - Galeri
+
+
   Website ini juga menampung daftar guru, berita terbaru, acara yang akan datang, daftar beasiswa, serta Testimoni Alumni. Dilengkapi juga Form Kontak sebagai jembatan antara user dan pihak sekolah untuk berkomunkasi.
 
 
