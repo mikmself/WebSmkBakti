@@ -1,66 +1,156 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Website SMK BAKTI PURWOKERTO
 
-## About Laravel
+Website untuk sekolah SMK BAKTI PURWOKERTO, menampung profil sekolah antara lain :
+- Video Profil Sekolah
+- Daftar Program Kejuruan
+- Visi Misi
+- Fasilitas
+- Daftar Ekstrakulikuler
+- Struktur Organisasi
+- Galeri
+  Website ini juga menampung daftar guru, berita terbaru, acara yang akan datang, daftar beasiswa, serta Testimoni Alumni. Dilengkapi juga Form Kontak sebagai jembatan antara user dan pihak sekolah untuk berkomunkasi.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Daftar Fitur
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Light/dark mode toggle
+- Count Down waktu PPDB
+- Manajemen data Beasiswa
+- Manajemen Berita
+- Manajemen data Ekstrakulikuler
+- Manajemen data Fasilitas
+- Manajemen Geleri
+- Manajemen data Guru
+- Manajemen data Kontak User
+- Manajemen data Pendaftar
+- Manajemen data User
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Memberikan fitur untuk mendaftar lewat website dengan cara mengisi form yang disediakan. Serta melakukan pendaftaran lewat whatsapp dengan cara mengunduh berkas-berkas, lalu mengisinya, setelah itu dikirimkan ke nomor Whatsapp yang sudah disediakan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Install Web Smk Bakti Purwokerto With Composer
 
-### Premium Partners
+```bash
+  git clone https://github.com/mikmself/WebSmkBakti.git
+  cd WebSmkBakti
+  composer install || composer update
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## rename .env.exampe to .env
+```bash
+  cp .env.example .env
+```
+## setup database
+```bash
+ DB_CONNECTION=mysql
+ DB_HOST=127.0.0.1
+ DB_PORT=3306
+ DB_DATABASE=smkbakti
+ DB_USERNAME=root
+ DB_PASSWORD=
+```
+## migrate, seed, and run
+```bash
+php artisan migrate
+php artisan db:seed
+php artisan serve
+```
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## More Info
+To see hidden route list
+```bash
+php artisan route:list
+```
+Admin Login
+```bash
+/admin/login
+```
+## file master
+` /resources/views/userpage/master `
 
-## Code of Conduct
+## More Command
+Jika Gambar Tidak Muncul Jalankan Perintah
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+` php artisan storage:link `
 
-## Security Vulnerabilities
+Jika Membuat route baru jalankan perintah ini untuk merefresh cache
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+` php artisan route:clear `
+
+Jika Membuat view baru jalankan perintah ini untuk merefresh cache
+
+` php artisan view:clear `
+
+Jika Membuat config baru jalankan perintah ini untuk merefresh cache
+
+` php artisan config:clear `
+
+Jika Membuat event baru jalankan perintah ini untuk merefresh cache
+
+` php artisan event:clear `
+# Screenshots
+## Halaman Beranda
+![App Screenshot](https://i.ibb.co.com/FVzL2Ym/d3aaae57-cb43-4a08-bd78-802117b9c41a.png)
+
+## Halaman Visi Misi
+![App Screenshot](https://i.ibb.co.com/bBSVdDt/screencapture-127-0-0-1-8000-visi-misi-2024-06-14-13-12-56.png)
+
+## Halaman Fasilitas
+![App Screenshot](https://i.ibb.co.com/YLVSH0R/screencapture-127-0-0-1-8000-fasilitas-2024-06-14-13-14-31.png)
+
+## Halaman Ekstrakulikuler
+![App Screenshot](https://i.ibb.co.com/G5y5HZr/screencapture-127-0-0-1-8000-ekstrakulikuler-2024-06-14-13-15-22.png)
+
+## Halaman Struktur Organisasi
+![App Screenshot](https://i.ibb.co.com/W0CLFW6/screencapture-127-0-0-1-8000-struktur-organisasi-2024-06-14-13-16-09.png)
+
+## Halaman Daftar Guru
+![App Screenshot](https://i.ibb.co.com/F5g3T9j/screencapture-127-0-0-1-8000-data-guru-2024-06-14-13-17-16.png)
+
+## Halaman Alur Pendaftaran
+![App Screenshot](https://i.ibb.co.com/W0DYTfr/screencapture-127-0-0-1-8000-alur-pendaftaran-2024-06-14-13-18-10.png)
+
+## Halaman Data Beasiswa
+![App Screenshot](https://i.ibb.co.com/ckRH07Z/screencapture-127-0-0-1-8000-beasiswa-2024-06-14-13-18-53.png)
+
+## Halaman Pendaftaran Via Whatsapp
+![App Screenshot](https://i.ibb.co.com/MRYdDP6/screencapture-127-0-0-1-8000-pendaftaran-whatsapp-2024-06-14-13-20-00.png)
+
+## Halaman Pendaftaran Via Website
+![App Screenshot](https://i.ibb.co.com/yX3XMdS/screencapture-127-0-0-1-8000-pendaftaran-website-2024-06-14-13-20-32.png)
+
+## Halaman Kontak
+![App Screenshot](https://i.ibb.co.com/g7PVdTd/screencapture-127-0-0-1-8000-kontak-2024-06-14-13-21-23.png)
+## Optimizations
+
+```bash
+  php artisan optimize
+  php artisan config:cache
+  php artisan event:cache
+  php artisan route:cache
+  php artisan view:cache
+```
+
+
+## Tech Stack
+
+**Client:** Laravel Livewire, TailwindCSS
+
+**Server:** Node, Laravel
+
+
+## Authors
+
+- [@mikmself](https://www.github.com/mikmself)
+- [@Dianazmi](https://github.com/Dianazmi)
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+[MIT](https://choosealicense.com/licenses/mit/)
+
