@@ -117,43 +117,43 @@
             <div class="slider-wrapper">
                 <div class="slide">
                     <p class="desc">SMK BAKTI PURWOKERTO Membentuk saya menjadi seseorang yang memiliki dasar IPTEK yang berkualitas serta didasari dengan iman dan takwa sebagai bekal ketika saya bekerja.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 1" class="image">
+                    <img src="/assets/img/testimoni/1.png" alt="Testimoni 1" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">Sekolah ini memberikan pengalaman belajar yang luar biasa dan mendukung penuh pengembangan karir saya.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 2" class="image">
+                    <img src="/assets/img/testimoni/2.png" alt="Testimoni 2" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">Para pengajar sangat berkompeten dan selalu memberikan bimbingan yang tepat sehingga saya bisa mencapai tujuan saya.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 3" class="image">
+                    <img src="/assets/img/testimoni/3.png" alt="Testimoni 3" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">Lingkungan belajar yang kondusif dan fasilitas yang lengkap membantu saya belajar dengan lebih efektif.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 4" class="image">
+                    <img src="/assets/img/testimoni/4.png" alt="Testimoni 4" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">SMK BAKTI PURWOKERTO memberikan saya banyak kesempatan untuk berpartisipasi dalam berbagai kegiatan ekstrakurikuler.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 5" class="image">
+                    <img src="/assets/img/testimoni/5.png" alt="Testimoni 5" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">Saya merasa bangga menjadi alumni sekolah ini karena telah dibekali dengan pengetahuan dan keterampilan yang cukup.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 6" class="image">
+                    <img src="/assets/img/testimoni/6.png" alt="Testimoni 6" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">Sekolah ini mengajarkan nilai-nilai moral yang sangat penting selain pendidikan akademik.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 7" class="image">
+                    <img src="/assets/img/testimoni/7.png" alt="Testimoni 7" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">Dengan pendidikan yang saya peroleh di sini, saya merasa siap untuk menghadapi dunia kerja.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 8" class="image">
+                    <img src="/assets/img/testimoni/8.png" alt="Testimoni 8" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">Banyak pengalaman berharga yang saya dapatkan selama bersekolah di SMK BAKTI PURWOKERTO.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 9" class="image">
+                    <img src="/assets/img/testimoni/9.png" alt="Testimoni 9" class="image">
                 </div>
                 <div class="slide">
                     <p class="desc">SMK BAKTI PURWOKERTO membantu saya menemukan passion dan mengejar cita-cita saya dengan semangat.</p>
-                    <img src="/assets/img/ilustrator/testimoni.png" alt="Testimoni 10" class="image">
+                    <img src="/assets/img/testimoni/10.png" alt="Testimoni 10" class="image">
                 </div>
             </div>
             <button class="prev">&lt;</button>

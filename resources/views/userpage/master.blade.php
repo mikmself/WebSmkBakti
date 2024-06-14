@@ -144,10 +144,10 @@
     </div>
     <div class="fourth">
         <h1 class="title">Social Media Link</h1>
-        <a href="" class="link">Facebook</a>
-        <a href="" class="link">Instagram</a>
-        <a href="" class="link">Twitter</a>
-        <a href="" class="link">Youtube</a>
+        <a href="https://www.facebook.com/smk.purwokerto/" class="link" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/smkbaktipurwokerto/" class="link" target="_blank">Instagram</a>
+        <a href="" class="link" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/channel/UCvNiUgrcHC69mvErl7o4ylQ" class="link" target="_blank">Youtube</a>
     </div>
 </footer>
 </body>

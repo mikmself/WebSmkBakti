@@ -409,7 +409,7 @@ main section#news .header {
   align-items: center;
 }
 main section#news .header h1.title {
-  font-size: "Rubic-Bold";
+  font-family: "Rubic-Semibold";
   font-size: 40px;
   color: white;
   border-bottom: 2px solid white;

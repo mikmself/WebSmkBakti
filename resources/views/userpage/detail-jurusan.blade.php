@@ -1,22 +1,44 @@
 @extends('userpage.master')
-@section('title','Detail Jurusan')
+@section('title',$title)
 @section('content')
-    <section id="detail-jurusan">
-        <div class="left">
-            <div class="card">
-                <h1 class="title">Program Lainnya</h1>
-                <a href="{{route('detailJurusan','tkjt')}}">Teknik Komputer Jaringan dan Telekomunikasi</a>
-                <a href="{{route('detailJurusan','mplb')}}">Management Perkantoran dan Layanan Bisnis</a>
-                <a href="{{route('detailJurusan','dkv')}}">Dasar Komunikasi Visual</a>
-                <a href="{{route('detailJurusan','akl')}}">Akuntansi Keuangan Lembaga</a>
-            </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .berita {
+            margin-bottom: 20px;
+        }
+        .gambar {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .judul {
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .isi {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+    <div class="container">
+        <div class="berita">
+            <img src="{{$image}}" alt="Gambar Berita" class="gambar">
+            <h1 class="judul">{{$title}}</h1>
+            <p class="isi">{!! $isi !!}</p>
         </div>
-        <div class="right">
-            <div class="content">
-                <img src="{{$image}}" alt="" class="image">
-                <h1 class="title">{{$title}}</h1>
-                <p class="isi">{{$isi}}</p>
-            </div>
-        </div>
-    </section>
+    </div>
 @endsection
