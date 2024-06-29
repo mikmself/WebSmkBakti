@@ -14,7 +14,7 @@
             <h1>PENDAFTARAN VIA WEBSITE</h1>
         </div>
         <div class="content">
-            <form action="{{route('daftarWebsite')}}" method="post">
+            <form action="{{route('daftarWebsite')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="title-form">
                     <h1 class="text">DATA CALON SISWA</h1>
@@ -238,7 +238,6 @@
                     <label for="">NO. HP</label>
                     <input type="text" name="telephone_ibu" id="" />
                 </div>
-                <h1 class="title-form">REKOMENDASI</h1>
                 <div class="input-group">
                     <label for="">SUMBER REKOMENDASI</label>
                     <select name="sumber_rekomendasi" id="">
@@ -257,6 +256,27 @@
                 <div class="input-group">
                     <label for="">NAMA SUMBER REKOMENDASI</label>
                     <input type="text" name="nama_sumber_rekomendasi" id="" />
+                </div>
+                <h1 class="title-form">UPLOAD FILE PENDAFTARAN (ext : pdf)</h1>
+                <div class="input-group">
+                    <label for="">SURAT KETERANGAN LULUS</label>
+                    <input type="file" name="file_skl" id="" style="text-align: center;"/>
+                </div>
+                <div class="input-group">
+                    <label for="">KARTU KELUARGA</label>
+                    <input type="file" name="file_kk" id="" />
+                </div>
+                <div class="input-group">
+                    <label for="">AKTE KELAHIRAN</label>
+                    <input type="file" name="file_akte" id="" />
+                </div>
+                <div class="input-group">
+                    <label for="">KARTU INDONESIA PINTAR (bila ada)</label>
+                    <input type="file" name="file_kip" id="" />
+                </div>
+                <div class="input-group">
+                    <label for="">SKTM (bila ada)</label>
+                    <input type="file" name="file_sktm" id="" />
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" name="" id="" />

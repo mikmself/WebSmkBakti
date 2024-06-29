@@ -44,6 +44,11 @@ class Pendaftar extends Model
         'nama_sumber_rekomendasi',
         'user_id',
         'lulus',
+        'file_skl',
+        'file_kk',
+        'file_akte',
+        'file_kip',
+        'file_sktm'
     ];
 
     public function user()

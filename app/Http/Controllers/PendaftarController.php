@@ -66,6 +66,11 @@ class PendaftarController extends Controller
                 'pekerjaan_ibu' => 'required',
                 'penghasilan_ibu' => 'required',
                 'telephone_ibu' => 'required',
+                'file_skl' => 'required|mimes:pdf|max:2048',
+                'file_kk' => 'required|mimes:pdf|max:2048',
+                'file_akte' => 'required|mimes:pdf|max:2048',
+                'file_kip' => 'mimes:pdf|max:2048',
+                'file_sktm' => 'mimes:pdf|max:2048',
             ]);
             if ($validator->fails()) {
                 foreach ($validator->errors()->all() as $error) {
@@ -74,6 +79,31 @@ class PendaftarController extends Controller
                 return redirect()->back()->withInput($request->all());
             }
             DB::beginTransaction();
+            if($request->hasFile('file_skl')){
+                $file_skl = $request->file('file_skl');
+                $file_skl_name = time()."_".$file_skl->getClientOriginalName();
+                $file_skl->move(public_path('file/pendaftar/skl'),$file_skl_name);
+            }
+            if($request->hasFile('file_kk')){
+                $file_kk = $request->file('file_kk');
+                $file_kk_name = time()."_".$file_kk->getClientOriginalName();
+                $file_kk->move(public_path('file/pendaftar/kk'),$file_kk_name);
+            }
+            if($request->hasFile('file_akte')){
+                $file_akte = $request->file('file_akte');
+                $file_akte_name = time()."_".$file_akte->getClientOriginalName();
+                $file_akte->move(public_path('file/pendaftar/akte'),$file_akte_name);
+            }
+            if($request->hasFile('file_kip')){
+                $file_kip = $request->file('file_kip');
+                $file_kip_name = time()."_".$file_kip->getClientOriginalName();
+                $file_kip->move(public_path('file/pendaftar/kip'),$file_kip_name);
+            }
+            if($request->hasFile('file_sktm')){
+                $file_sktm = $request->file('file_sktm');
+                $file_sktm_name = time()."_".$file_sktm->getClientOriginalName();
+                $file_sktm->move(public_path('file/pendaftar/sktm'),$file_sktm_name);
+            }
             Pendaftar::create([
                 'kompetensi_keahlian' => $request->input('kompetensi_keahlian'),
                 'nama_lengkap' => $request->input('nama_lengkap'),
@@ -109,6 +139,11 @@ class PendaftarController extends Controller
                 'nama_sumber_rekomendasi' => $request->input('nama_sumber_rekomendasi'),
                 'user_id' => null,
                 'lulus' => "false",
+                'file_skl' => $file_skl_name,
+                'file_kk' => $file_kk_name,
+                'file_akte' => $file_akte_name,
+                'file_kip' => $file_kip_name,
+                'file_sktm' => $file_sktm_name
             ]);
             DB::commit();
             toast('Data berhasil disimpan','success');

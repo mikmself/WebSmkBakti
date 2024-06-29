@@ -50,6 +50,11 @@ return new class extends Migration
             $table->string('nama_sumber_rekomendasi');
             $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('cascade');
             $table->string('lulus')->nullable();
+            $table->string('file_skl')->nullable();
+            $table->string('file_kk')->nullable();
+            $table->string('file_akte')->nullable();
+            $table->string('file_kip')->nullable();
+            $table->string('file_sktm')->nullable();
             $table->timestamps();
         });
     }
