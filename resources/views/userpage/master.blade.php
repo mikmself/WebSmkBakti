@@ -59,6 +59,7 @@
             <a class="item" id="dropdown2">PPDB &#x25BC;</a>
             <div class="dropdown-content2" id="dropdown-content2">
                 <a href="{{route('alurPendaftaran')}}">ALUR PENDAFTARAN</a>
+                <a href="{{route('syaratPendaftaran')}}">SYARAT PENDAFTARAN</a>
                 <a href="{{route('beasiswa')}}">BEASISWA</a>
                 <a href="{{route('pendaftaranWhatsapp')}}">PENDAFTARAN VIA WHATSAPP</a>
                 <a href="{{route('pendaftaranWebsite')}}">PENDAFTARAN VIA WEBSITE</a>
@@ -141,6 +142,7 @@
     <div class="seccond">
         <h1 class="title">Ppdb</h1>
         <a href="{{route('alurPendaftaran')}}" class="link">Alur Pendaftaran</a>
+        <a href="{{route('syaratPendaftaran')}}" class="link">Syarat Pendaftaran</a>
         <a href="{{route('beasiswa')}}" class="link">Beasiswa</a>
         <a href="{{route('pendaftaranWhatsapp')}}" class="link">Pendaftaran Via Whatsapp</a>
         <a href="{{route('pendaftaranWebsite')}}" class="link">Pendaftaran Via Website</a>

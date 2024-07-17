@@ -88,4 +88,8 @@ class HomeController extends Controller
     public function visiMisi(){
         return view('userpage.visimisi');
     }
+
+    public function syaratPendaftaran(){
+        return view('userpage.syarat-pendaftaran');
+    }
 }

@@ -3,7 +3,7 @@
 @section('content')
     <section id="banner">
         <img src="/assets/img/banner/hero-image.png" alt="Hero Image" class="hero-image">
-        <h1 class="main-title">Pembukaan <span class="orange">akan berakhir</span> pada :</h1>
+{{--        <h1 class="main-title">Pembukaan <span class="orange">akan berakhir</span> pada :</h1>--}}
         <div class="content">
 {{--            <div class="countdown">--}}
 {{--                <div class="countdown-item">--}}

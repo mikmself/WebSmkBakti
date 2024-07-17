@@ -11,6 +11,7 @@ Route::get('/galeri',[\App\Http\Controllers\HomeController::class,'galeri'])->na
 Route::get('/data-guru',[\App\Http\Controllers\HomeController::class,'dataGuru'])->name('dataGuru');
 Route::get('/ekstrakulikuler',[\App\Http\Controllers\HomeController::class,'ekstrakulikuler'])->name('ekstrakulikuler');
 Route::get('/fasilitas',[\App\Http\Controllers\HomeController::class,'fasilitas'])->name('fasilitas');
+Route::get('/syarat-pendaftaran',[\App\Http\Controllers\HomeController::class,'syaratPendaftaran'])->name('syaratPendaftaran');
 Route::get('/kontak',[\App\Http\Controllers\HomeController::class,'kontak'])->name('kontak');
 Route::get('/pendaftaran-website',[\App\Http\Controllers\HomeController::class,'pendaftaranWebsite'])->name('pendaftaranWebsite');
 Route::get('/pendaftaran-whatsapp',[\App\Http\Controllers\HomeController::class,'pendaftaranWhatsapp'])->name('pendaftaranWhatsapp');
