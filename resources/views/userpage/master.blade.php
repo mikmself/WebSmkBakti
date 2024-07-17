@@ -65,7 +65,7 @@
             </div>
             <a href="{{route('kontak')}}" class="item">KONTAK</a>
         </div>
-        <div class="search">
+        <div class="search" style="visibility: hidden">
             <input type="text" name="search" class="search-input">
             <img src="/assets/img/icon/search.png" alt="Icon Cari" class="icon">
         </div>
@@ -75,16 +75,16 @@
     @yield('content')
     <section id="contact">
         <div class="left">
-            <h1 class="title">Contact</h1>
-            <p class="desc">Thank you for your interest. We look forward to hearing from you soon.</p>
+            <h1 class="title">Kontak</h1>
+            <p class="desc">Terimakasih telah berkunjung. Kami menunggu anda bergabung.</p>
             <div class="contents">
                 <div class="content">
                     <div class="icon">
                         <img src="/assets/img/icon/jam.png" alt="">
                     </div>
                     <div class="fill">
-                        <p>Hours Of Operation</p>
-                        <p>Mon-Fri:  8AM - 12PM</p>
+                        <p>Jam Operasional</p>
+                        <p>Sen-Jum:  8AM - 12PM</p>
                     </div>
                 </div>
                 <div class="content">
@@ -92,7 +92,7 @@
                         <img src="/assets/img/icon/telephone.png" alt="">
                     </div>
                     <div class="fill">
-                        <p>24/7 Emergency Service</p>
+                        <p>Nomor Telepon</p>
                         <p>081326830861</p>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         <img src="/assets/img/icon/location.png" alt="">
                     </div>
                     <div class="fill">
-                        <p>Service Area</p>
+                        <p>Alamat</p>
                         <p>Jl. DR. Soeparno No.13, Purwokerto Wetan, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53111</p>
                     </div>
                 </div>
@@ -110,11 +110,11 @@
         <div class="right">
             <form action="{{route('kontak.store')}}" method="post">
                 @csrf
-                <input type="text" name="first_name" id="first-name" class="input-text" placeholder="First name">
-                <input type="text" name="last_name" id="last-name" class="input-text" placeholder="Last name">
-                <input type="email" name="email" id="email" class="input-text" placeholder="Email address">
-                <input type="text" name="phone" id="phone" class="input-text" placeholder="Phone number">
-                <textarea name="message" id="message" class="input-text" placeholder="Message"></textarea>
+                <input type="text" name="first_name" id="first-name" class="input-text" placeholder="Nama Depan">
+                <input type="text" name="last_name" id="last-name" class="input-text" placeholder="Nama Belakang">
+                <input type="email" name="email" id="email" class="input-text" placeholder="Alamat Email">
+                <input type="text" name="phone" id="phone" class="input-text" placeholder="Nomor HP">
+                <textarea name="message" id="message" class="input-text" placeholder="Pesan"></textarea>
                 <div class="container">
                     <button class="btn-submit">Send Message</button>
                 </div>
@@ -125,17 +125,25 @@
 <footer>
     <div class="first">
         <h1 class="title">Links</h1>
-        <a href="" class="link">Beranda</a>
-        <a href="" class="link">Profile</a>
-        <a href="" class="link">Direktori</a>
-        <a href="" class="link">Galeri</a>
-        <a href="" class="link">PPDB</a>
-        <a href="" class="link">Kontak</a>
+        <a href="{{route('index')}}" class="link">Beranda</a>
+        <a href="{{route('semuaBerita')}}" class="link">Akses Berita</a>
+        <a href="{{route('dataGuru')}}" class="link">Data Guru</a>
+        <a href="{{route('galeri')}}" class="link">Galeri</a>
+        <a href="{{route('kontak')}}" class="link">Kontak</a>
     </div>
     <div class="seccond">
-        <h1 class="title">Account</h1>
-        <a href="" class="link">Login</a>
-        <a href="" class="link">Register</a>
+        <h1 class="title">Profile</h1>
+        <a href="{{route('visiMisi')}}" class="link">Visi Misi</a>
+        <a href="{{route('fasilitas')}}" class="link">Fasilitas</a>
+        <a href="{{route('ekstrakulikuler')}}" class="link">Ekstrakulikuler</a>
+        <a href="{{route('strukturOrganisasi')}}" class="link">Struktur Organisasi</a>
+    </div>
+    <div class="seccond">
+        <h1 class="title">Ppdb</h1>
+        <a href="{{route('alurPendaftaran')}}" class="link">Alur Pendaftaran</a>
+        <a href="{{route('beasiswa')}}" class="link">Beasiswa</a>
+        <a href="{{route('pendaftaranWhatsapp')}}" class="link">Pendaftaran Via Whatsapp</a>
+        <a href="{{route('pendaftaranWebsite')}}" class="link">Pendaftaran Via Website</a>
     </div>
     <div class="third">
         <h1 class="title">Legal</h1>

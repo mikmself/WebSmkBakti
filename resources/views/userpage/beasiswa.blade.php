@@ -23,14 +23,16 @@
                     <th>Deadline</th>
                     <th class="pendek">Lihat</th>
                 </tr>
+                @php($no = 1)
                 @foreach($dataBeasiswa as $beasiswa)
                     <tr>
-                        <td class="pendek">1.</td>
+                        <td class="pendek">{{$no}}</td>
                         <td>{{$beasiswa->nama_beasiswa}}</td>
                         <td>{{$beasiswa->penyelenggara}}</td>
                         <td>{{ date('d M Y', strtotime($beasiswa->deadline)) }}</td>
                         <td class="pendek"><img src="/assets/img/icon/search.png" alt=""></td>
                     </tr>
+                @php($no++)
                 @endforeach
             </table>
         </div>

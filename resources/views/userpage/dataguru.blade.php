@@ -10,7 +10,7 @@
         </div>
         <div class="content">
             <div class="container">
-                <div class="search">
+                <div class="search" style="visibility: hidden">
                     <p class="desc">Search</p>
                     <input type="text" name="" id="">
                 </div>
@@ -21,16 +21,16 @@
                     <th>NAMA</th>
                     <th>MATA PELAJARAN</th>
                     <th>NIP</th>
-                    <th class="pendek">Lihat</th>
                 </tr>
+                @php($no = 1)
                 @foreach($dataGuru as $guru)
                     <tr>
-                        <td class="pendek">1.</td>
+                        <td class="pendek">{{$no}}</td>
                         <td>{{$guru->nama}}</td>
                         <td>{{$guru->mapel}}</td>
                         <td>{{$guru->nip}}</td>
-                        <td class="pendek"><img src="/assets/img/icon/search.png" alt=""></td>
                     </tr>
+                @php($no++)
                 @endforeach
             </table>
         </div>

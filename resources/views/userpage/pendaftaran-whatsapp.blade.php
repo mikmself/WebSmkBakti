@@ -53,17 +53,20 @@
                 </div>
                 <p class="desc">*Tata cara pendaftaran via whatsapp : Pilih salah satu nomor Hotline dibawah ini setelah itu isi dan kirim formulir yang telah disediakan.</p>
                 <div class="numbers">
-                    <div class="number">
-                        <p class="name">BU NANI</p>
-                        <p class="phone-number">081326830861</p>
+                    <div class="number" style="cursor: pointer" onclick="window.location.replace('https://wa.me/6285227081875');">
+                        <img src="/assets/img/icon/whatsapp.png" style="width: 1.2cm; margin-bottom: .2cm">
+                        <p class="name">BU RETNO</p>
+                        <p class="phone-number">085227081875</p>
                     </div>
-                    <div class="number">
+                    <div class="number" style="cursor: pointer" onclick="window.location.replace('https://wa.me/6281546912260');">
+                        <img src="/assets/img/icon/whatsapp.png" style="width: 1.2cm; margin-bottom: .2cm">
                         <p class="name">BU SUDI</p>
                         <p class="phone-number"> 081546912260</p>
                     </div>
-                    <div class="number">
-                        <p class="name">BU RATNA</p>
-                        <p class="phone-number">085747777762</p>
+                    <div class="number" style="cursor: pointer" onclick="window.location.replace('https://wa.me/6285747500033');">
+                        <img src="/assets/img/icon/whatsapp.png" style="width: 1.2cm; margin-bottom: .2cm">
+                        <p class="name">BU DIAN</p>
+                        <p class="phone-number">085747500033</p>
                     </div>
                 </div>
             </div>

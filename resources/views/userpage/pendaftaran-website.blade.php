@@ -257,25 +257,25 @@
                     <label for="">NAMA SUMBER REKOMENDASI</label>
                     <input type="text" name="nama_sumber_rekomendasi" id="" />
                 </div>
-                <h1 class="title-form">UPLOAD FILE PENDAFTARAN (ext : pdf)</h1>
+                <h1 class="title-form">UPLOAD BERKAS (ext : pdf)</h1>
                 <div class="input-group">
-                    <label for="">SURAT KETERANGAN LULUS</label>
+                    <label for="">Upload SKL / Rapot</label>
                     <input type="file" name="file_skl" id="" style="text-align: center;"/>
                 </div>
                 <div class="input-group">
-                    <label for="">KARTU KELUARGA</label>
+                    <label for="">Upload FC Kartu Keluarga</label>
                     <input type="file" name="file_kk" id="" />
                 </div>
                 <div class="input-group">
-                    <label for="">AKTE KELAHIRAN</label>
+                    <label for="">Upload Akta Kelahiran</label>
                     <input type="file" name="file_akte" id="" />
                 </div>
                 <div class="input-group">
-                    <label for="">KARTU INDONESIA PINTAR (bila ada)</label>
+                    <label for="">Upload FC Kartu KIP (Bila Ada)</label>
                     <input type="file" name="file_kip" id="" />
                 </div>
                 <div class="input-group">
-                    <label for="">SKTM (bila ada)</label>
+                    <label for="">Upload SKTM (bila ada)</label>
                     <input type="file" name="file_sktm" id="" />
                 </div>
                 <div class="checkbox">

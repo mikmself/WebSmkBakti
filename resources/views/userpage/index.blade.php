@@ -5,24 +5,24 @@
         <img src="/assets/img/banner/hero-image.png" alt="Hero Image" class="hero-image">
         <h1 class="main-title">Pembukaan <span class="orange">akan berakhir</span> pada :</h1>
         <div class="content">
-            <div class="countdown">
-                <div class="countdown-item">
-                    <h1 class="countdown-number" id="days">12</h1>
-                    <p class="countdown-text">Days</p>
-                </div>
-                <div class="countdown-item">
-                    <h1 class="countdown-number" id="hours">12</h1>
-                    <p class="countdown-text">Hours</p>
-                </div>
-                <div class="countdown-item">
-                    <h1 class="countdown-number" id="minutes">12</h1>
-                    <p class="countdown-text">Minutes</p>
-                </div>
-                <div class="countdown-item">
-                    <h1 class="countdown-number" id="seconds">12</h1>
-                    <p class="countdown-text">Seconds</p>
-                </div>
-            </div>
+{{--            <div class="countdown">--}}
+{{--                <div class="countdown-item">--}}
+{{--                    <h1 class="countdown-number" id="days">12</h1>--}}
+{{--                    <p class="countdown-text">Days</p>--}}
+{{--                </div>--}}
+{{--                <div class="countdown-item">--}}
+{{--                    <h1 class="countdown-number" id="hours">12</h1>--}}
+{{--                    <p class="countdown-text">Hours</p>--}}
+{{--                </div>--}}
+{{--                <div class="countdown-item">--}}
+{{--                    <h1 class="countdown-number" id="minutes">12</h1>--}}
+{{--                    <p class="countdown-text">Minutes</p>--}}
+{{--                </div>--}}
+{{--                <div class="countdown-item">--}}
+{{--                    <h1 class="countdown-number" id="seconds">12</h1>--}}
+{{--                    <p class="countdown-text">Seconds</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="persuade">
                 <h1 class="title">SIAP KULIAH DAN KERJA</h1>
                 <p class="desc">SEGERA BERGABUNG DENGAN KAMI. JANGAN RAGU UNTUK MAJU!!!</p>
@@ -48,7 +48,7 @@
         </div>
         <div class="content">
             <div class="card tkjt">
-                <img src="/assets/img/content/jurusan/tkjt.png" alt="" class="image">
+                <img src="/assets/img/content/jurusan/tkjt.jpeg" alt="" class="image" style="height: 7cm">
                 <div class="text">
                     <h1 class="title">#TKJT</h1>
                     <p>Teknik Komputer Jaringan dan Telekomunikasi</p>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="card mplb">
-                <img src="/assets/img/content/jurusan/mplb.png" alt="" class="image">
+                <img src="/assets/img/content/jurusan/mplb.jpeg" alt="" class="image" style="height: 7cm">
                 <div class="text">
                     <h1 class="title">#MPLB</h1>
                     <p>Management Perkantoran dan Layanan Bisnis</p>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="card akl">
-                <img src="/assets/img/content/jurusan/akl.png" alt="" class="image">
+                <img src="/assets/img/content/jurusan/akl.jpeg" alt="" class="image" style="height: 7cm">
                 <div class="text">
                     <h1 class="title">#AKL</h1>
                     <p>Akutansi Keuangan Lembaga</p>
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="card dkv">
-                <img src="/assets/img/content/jurusan/dkv.png" alt="" class="image">
+                <img src="/assets/img/content/jurusan/dkv.jpeg" alt="" class="image" style="height: 7cm">
                 <div class="text">
                     <h1 class="title">#DKV</h1>
                     <p>Desain Komunikasi Visual</p>
@@ -117,43 +117,23 @@
             <div class="slider-wrapper">
                 <div class="slide">
                     <p class="desc">SMK BAKTI PURWOKERTO Membentuk saya menjadi seseorang yang memiliki dasar IPTEK yang berkualitas serta didasari dengan iman dan takwa sebagai bekal ketika saya bekerja.</p>
-                    <img src="/assets/img/testimoni/1.png" alt="Testimoni 1" class="image">
+                    <img src="/assets/img/testimoni/1.jpg" alt="Testimoni 1" class="image" style="width: 400px; height: 400px; border-radius: 100%">
                 </div>
                 <div class="slide">
                     <p class="desc">Sekolah ini memberikan pengalaman belajar yang luar biasa dan mendukung penuh pengembangan karir saya.</p>
-                    <img src="/assets/img/testimoni/2.png" alt="Testimoni 2" class="image">
+                    <img src="/assets/img/testimoni/2.jpg" alt="Testimoni 2" class="image" style="width: 400px; height: 400px; border-radius: 100%">
                 </div>
                 <div class="slide">
                     <p class="desc">Para pengajar sangat berkompeten dan selalu memberikan bimbingan yang tepat sehingga saya bisa mencapai tujuan saya.</p>
-                    <img src="/assets/img/testimoni/3.png" alt="Testimoni 3" class="image">
+                    <img src="/assets/img/testimoni/3.jpeg" alt="Testimoni 3" class="image" style="width: 400px; height: 400px; border-radius: 100%">
                 </div>
                 <div class="slide">
                     <p class="desc">Lingkungan belajar yang kondusif dan fasilitas yang lengkap membantu saya belajar dengan lebih efektif.</p>
-                    <img src="/assets/img/testimoni/4.png" alt="Testimoni 4" class="image">
+                    <img src="/assets/img/testimoni/4.jpg" alt="Testimoni 4" class="image" style="width: 400px; height: 400px; border-radius: 100%">
                 </div>
                 <div class="slide">
                     <p class="desc">SMK BAKTI PURWOKERTO memberikan saya banyak kesempatan untuk berpartisipasi dalam berbagai kegiatan ekstrakurikuler.</p>
-                    <img src="/assets/img/testimoni/5.png" alt="Testimoni 5" class="image">
-                </div>
-                <div class="slide">
-                    <p class="desc">Saya merasa bangga menjadi alumni sekolah ini karena telah dibekali dengan pengetahuan dan keterampilan yang cukup.</p>
-                    <img src="/assets/img/testimoni/6.png" alt="Testimoni 6" class="image">
-                </div>
-                <div class="slide">
-                    <p class="desc">Sekolah ini mengajarkan nilai-nilai moral yang sangat penting selain pendidikan akademik.</p>
-                    <img src="/assets/img/testimoni/7.png" alt="Testimoni 7" class="image">
-                </div>
-                <div class="slide">
-                    <p class="desc">Dengan pendidikan yang saya peroleh di sini, saya merasa siap untuk menghadapi dunia kerja.</p>
-                    <img src="/assets/img/testimoni/8.png" alt="Testimoni 8" class="image">
-                </div>
-                <div class="slide">
-                    <p class="desc">Banyak pengalaman berharga yang saya dapatkan selama bersekolah di SMK BAKTI PURWOKERTO.</p>
-                    <img src="/assets/img/testimoni/9.png" alt="Testimoni 9" class="image">
-                </div>
-                <div class="slide">
-                    <p class="desc">SMK BAKTI PURWOKERTO membantu saya menemukan passion dan mengejar cita-cita saya dengan semangat.</p>
-                    <img src="/assets/img/testimoni/10.png" alt="Testimoni 10" class="image">
+                    <img src="/assets/img/testimoni/5.jpg" alt="Testimoni 5" class="image" style="width: 400px; height: 400px; border-radius: 100%">
                 </div>
             </div>
             <button class="prev">&lt;</button>
