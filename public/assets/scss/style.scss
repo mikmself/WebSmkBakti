@@ -428,7 +428,7 @@ main {
         background-color: $background-color_1;
         padding: 1cm;
         .header {
-            width: 90%;
+            width: 98%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -455,11 +455,12 @@ main {
             align-items: center;
             margin-top: 1cm;
             .card {
-                width: 18%;
+                width: 24%;
                 height: 13cm;
                 background-color: $background-color_11;
                 border-radius: 20px;
                 margin-top: 1cm;
+                overflow: hidden;
                 img.image {
                     width: 100%;
                     height: 7cm;

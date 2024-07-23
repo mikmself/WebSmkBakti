@@ -10,7 +10,7 @@
         </div>
         <div class="content">
             <div class="container">
-                <div class="search">
+                <div class="search" style="visibility: hidden">
                     <p class="desc">Search</p>
                     <input type="text" name="" id="">
                 </div>
@@ -21,7 +21,6 @@
                     <th>Beasiswa</th>
                     <th>Penyelenggara</th>
                     <th>Deadline</th>
-                    <th class="pendek">Lihat</th>
                 </tr>
                 @php($no = 1)
                 @foreach($dataBeasiswa as $beasiswa)
@@ -30,7 +29,6 @@
                         <td>{{$beasiswa->nama_beasiswa}}</td>
                         <td>{{$beasiswa->penyelenggara}}</td>
                         <td>{{ date('d M Y', strtotime($beasiswa->deadline)) }}</td>
-                        <td class="pendek"><img src="/assets/img/icon/search.png" alt=""></td>
                     </tr>
                 @php($no++)
                 @endforeach

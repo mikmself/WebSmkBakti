@@ -69,6 +69,9 @@ class HomeController extends Controller
         $dataEkstrakulikuler = Ekstrakulikuler::all();
         return view('userpage.ekstrakulikuler',compact('dataEkstrakulikuler'));
     }
+    public function biaya(){
+        return view('userpage.rincianbiaya');
+    }
     public function fasilitas(){
         $dataFasilitas = Fasilitas::all();
         return view('userpage.fasilitas',compact('dataFasilitas'));

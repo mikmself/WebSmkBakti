@@ -401,7 +401,7 @@ main section#news {
   padding: 1cm;
 }
 main section#news .header {
-  width: 90%;
+  width: 98%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -429,11 +429,12 @@ main section#news .cards {
   margin-top: 1cm;
 }
 main section#news .cards .card {
-  width: 18%;
+  width: 24%;
   height: 13cm;
   background-color: white;
   border-radius: 20px;
   margin-top: 1cm;
+  overflow: hidden;
 }
 main section#news .cards .card img.image {
   width: 100%;

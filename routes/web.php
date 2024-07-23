@@ -18,6 +18,7 @@ Route::get('/pendaftaran-whatsapp',[\App\Http\Controllers\HomeController::class,
 Route::get('/struktur-organisasi',[\App\Http\Controllers\HomeController::class,'strukturOrganisasi'])->name('strukturOrganisasi');
 Route::get('/visi-misi',[\App\Http\Controllers\HomeController::class,'visiMisi'])->name('visiMisi');
 Route::get('/detail-jurusan/{jurusan}',[\App\Http\Controllers\HomeController::class,'detailJurusan'])->name('detailJurusan');
+Route::get('/rincianbiaya',[\App\Http\Controllers\HomeController::class,'biaya'])->name('biaya');
 
 Route::post('/daftar-website',[\App\Http\Controllers\PendaftarController::class,'daftarWebsite'])->name('daftarWebsite');
 Route::post('/kontak',[\App\Http\Controllers\KontakController::class,'store'])->name('kontak.store');
