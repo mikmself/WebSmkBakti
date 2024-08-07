@@ -107,7 +107,7 @@
         </div>
         <div class="right">
             <img src="/assets/img/content/acara-kelulusan.png" alt="" class="image">
-            <p class="desc">Acara kelulusan siswa siswi SMK Bakti Purwokerto angkatan 2021</p>
+            <p class="desc">Pendaftaran dan penerimaan peserta didik baru tahun 2024/2025</p>
         </div>
     </section>
     <section id="testimoni">

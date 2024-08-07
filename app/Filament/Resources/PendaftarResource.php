@@ -197,9 +197,51 @@ class PendaftarResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('nama_sumber_rekomendasi')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('user_id')
-                    ->numeric()
-                    ->sortable(),
+                Tables\Columns\TextColumn::make('file_skl')
+                    ->searchable()
+                    ->formatStateUsing(function ($state) {
+                        if ($state) {
+                            return '<a href="' . asset('/file/pendaftar/skl/' . $state) . '" target="_blank">Download</a>';
+                        }
+                        return $state;
+                    })
+                    ->html(),
+                Tables\Columns\TextColumn::make('file_kk')
+                    ->searchable()
+                    ->formatStateUsing(function ($state) {
+                        if ($state) {
+                            return '<a href="' . asset('/file/pendaftar/kk/' . $state) . '" target="_blank">Download</a>';
+                        }
+                        return $state;
+                    })
+                    ->html(),
+                Tables\Columns\TextColumn::make('file_akte')
+                    ->searchable()
+                    ->formatStateUsing(function ($state) {
+                        if ($state) {
+                            return '<a href="' . asset('/file/pendaftar/akte/' . $state) . '" target="_blank">Download</a>';
+                        }
+                        return $state;
+                    })
+                    ->html(),
+                Tables\Columns\TextColumn::make('file_kip')
+                    ->searchable()
+                    ->formatStateUsing(function ($state) {
+                        if ($state) {
+                            return '<a href="' . asset('/file/pendaftar/kip/' . $state) . '" target="_blank">Download</a>';
+                        }
+                        return $state;
+                    })
+                    ->html(),
+                Tables\Columns\TextColumn::make('file_sktm')
+                    ->searchable()
+                    ->formatStateUsing(function ($state) {
+                        if ($state) {
+                            return '<a href="' . asset('/file/pendaftar/sktm/' . $state) . '" target="_blank">Download</a>';
+                        }
+                        return $state;
+                    })
+                    ->html(),
                 Tables\Columns\TextColumn::make('lulus')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
