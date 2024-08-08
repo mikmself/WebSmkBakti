@@ -40,92 +40,13 @@
                     <input type="text" name="tempat_lahir" id="" />
                 </div>
                 <div class="input-group">
-                    <label for="">Tanggal Lahir</label>
-                    <input type="date" name="tanggal_lahir" id="" />
+                    <label for="tanggal_lahir">Tanggal Lahir</label>
+                    <input type="date" name="tanggal_lahir" id="tanggal_lahir" />
+                    <span id="error_message" style="color:red; display:none;">Tanggal lahir tidak boleh melebihi tanggal sekarang</span>
                 </div>
                 <div class="input-group">
-                    <label for="">Asal Sekolah SMP/MTS</label>
-                    <select name="asal_sekolah" id="asalsekolah" style="height: 1.2cm!important; border-radius: 0!important;">
-                        <option selected="" disabled="">-- Pilih sekolah --</option>
-                        <option value="SMP DIPONEGORO 1 PURWOKERTO">SMP DIPONEGORO 1 PURWOKERTO</option>
-                        <option value="SMP ISLAM TERPADU HARAPAN">SMP ISLAM TERPADU HARAPAN BUNDA</option>
-                        <option value="SMP MAARIF NU 03">SMP MAARIF NU 03 PURWOKERTO</option>
-                        <option value="SMP MAARIF NU 2">SMP MAARIF NU 2 PURWOKERTO</option>
-                        <option value="SMP MUHAMMADIYAH 1 PURWOKERTO">SMP MUHAMMADIYAH 1 PURWOKERTO</option>
-                        <option value="SMP MUHAMMADIYAH 2 PURWOKERTO">SMP MUHAMMADIYAH 2 PURWOKERTO</option>
-                        <option value="SMP NEGERI 5 PURWOKERTO">SMP NEGERI 5 PURWOKERTO</option>
-                        <option value="SMP NEGERI 7 PURWOKERTO">SMP NEGERI 7 PURWOKERTO</option>
-                        <option value="SMP TELKOM PURWOKERTO">SMP TELKOM PURWOKERTO</option>
-                        <option value="SMPS NASIONAL 3 BAHASA PUTERA HARAPAN">SMPS NASIONAL 3 BAHASA PUTERA HARAPAN</option>
-                        <option value="MTSN 1 BANYUMAS">MTSN 1 BANYUMAS</option>
-                        <option value="MTS MUHAMMADIYAH PURWOKERTO">MTS MUHAMMADIYAH PURWOKERTO</option>
-                        <option value="SMP AL IRSYAD AL ISLAMIYYAH">SMP AL IRSYAD AL ISLAMIYYAH</option>
-                        <option value="SMP BRUDERAN PURWOKERTO">SMP BRUDERAN PURWOKERTO</option>
-                        <option value="SMP KRISTEN 1 PURWOKERTO">SMP KRISTEN 1 PURWOKERTO</option>
-                        <option value="SMP MAARIF NU 1 PURWOKERTO">SMP MAARIF NU 1 PURWOKERTO</option>
-                        <option value="SMP NEGERI 1 PURWOKERTO">SMP NEGERI 1 PURWOKERTO</option>
-                        <option value="SMP NEGERI 2 PURWOKERTO">SMP NEGERI 2 PURWOKERTO</option>
-                        <option value="SMP NEGERI 6 PURWOKERTO">SMP NEGERI 6 PURWOKERTO</option>
-                        <option value="SMP NEGERI 8 PURWOKERTO">SMP NEGERI 8 PURWOKERTO</option>
-                        <option value="SMP PERMATA HATI">SMP PERMATA HATI</option>
-                        <option value="SMP SUSTERAN PURWOKERTO">SMP SUSTERAN PURWOKERTO</option>
-                        <option value="SMPN 3 PURWOKERTO">SMPN 3 PURWOKERTO</option>
-                        <option value="MTS AL HIDAYAH PURWOKERTO BARAT">MTS AL HIDAYAH PURWOKERTO BARAT</option>
-                        <option value="MTS MA`ARIF NU 1 PURWOKERTO BARAT">MTS MA`ARIF NU 1 PURWOKERTO BARAT</option>
-                        <option value="SMP BOARDING SCHOOL PUTRA HARAPAN PURWOKERTO">SMP BOARDING SCHOOL PUTRA HARAPAN PURWOKERTO</option>
-                        <option value="SMP GUNUNGJATI 1 PURWOKERTO">SMP GUNUNGJATI 1 PURWOKERTO</option>
-                        <option value="SMP GUNUNGJATI 2 PURWOKERTO">SMP GUNUNGJATI 2 PURWOKERTO</option>
-                        <option value="SMP NEGERI 4 PURWOKERTO">SMP NEGERI 4 PURWOKERTO</option>
-                        <option value="MTS AL - HIDAYAH PURWOKERTO">MTS AL - HIDAYAH PURWOKERTO</option>
-                        <option value="SMP MUHAMMADIYAH 3 PURWOKERTO">SMP MUHAMMADIYAH 3 PURWOKERTO</option>
-                        <option value="SMP NEGERI 9 PURWOKERTO">SMP NEGERI 9 PURWOKERTO</option>
-                        <option value="MTS AL IKHSAN BEJI KEDUNGBANTENG">MTS AL IKHSAN BEJI KEDUNGBANTENG</option>
-                        <option value="MTS MA`ARIF NU 1 KEDUNGBANTENG">MTS MA`ARIF NU 1 KEDUNGBANTENG</option>
-                        <option value="SMP DIPONEGORO 3 KEDUNGBANTENG">SMP DIPONEGORO 3 KEDUNGBANTENG</option>
-                        <option value="SMP MUHAMMADIYAH BEJI KEDUNGBANTENG">SMP MUHAMMADIYAH BEJI KEDUNGBANTENG</option>
-                        <option value="SMP NEGERI 1 KEDUNGBANTENG">SMP NEGERI 1 KEDUNGBANTENG</option>
-                        <option value="SMP NEGERI 2 KEDUNGBANTENG">SMP NEGERI 2 KEDUNGBANTENG</option>
-                        <option value="SMP NEGERI 3 KEDUNGBANTENG">SMP NEGERI 3 KEDUNGBANTENG</option>
-                        <option value="SMP NEGERI 4 KEDUNGBANTENG">SMP NEGERI 4 KEDUNGBANTENG</option>
-                        <option value="MTS MA`ARIF NU 1 SOKARAJA">MTS MA`ARIF NU 1 SOKARAJA</option>
-                        <option value="SMP IT ANNIDA SOKARAJA">SMP IT ANNIDA SOKARAJA</option>
-                        <option value="SMP MUHAMMADIYAH SOKARAJA">SMP MUHAMMADIYAH SOKARAJA</option>
-                        <option value="SMP NEGERI 1 SOKARAJA">SMP NEGERI 1 SOKARAJA</option>
-                        <option value="SMP NEGERI 2 SOKARAJA">SMP NEGERI 2 SOKARAJA</option>
-                        <option value="SMP YOS SUDARSO SOKARAJA">SMP YOS SUDARSO SOKARAJA</option>
-                        <option value="SMPN 3 SOKARAJA">SMPN 3 SOKARAJA</option>
-                        <option value="MTS MA`ARIF NU 1 KEMBARAN">MTS MA`ARIF NU 1 KEMBARAN</option>
-                        <option value="MTS SA RAODHOTUT THOLIBIN KEMBARAN71">MTS SA RAODHOTUT THOLIBIN KEMBARAN</option>
-                        <option value="SMP GUNUNGJATI KEMBARAN">SMP GUNUNGJATI KEMBARAN</option>
-                        <option value="SMP ISLAM WALISONGO KEMBARAN">SMP ISLAM WALISONGO KEMBARAN</option>
-                        <option value="SMP MUHAMMADIYAH KEMBARAN">SMP MUHAMMADIYAH KEMBARAN</option>
-                        <option value="SMP NEGERI 1 KEMBARAN">SMP NEGERI 1 KEMBARAN</option>
-                        <option value="SMP NEGERI 2 KEMBARAN">SMP NEGERI 2 KEMBARAN</option>
-                        <option value="MTSN 3 BANYUMAS">MTSN 3 BANYUMAS</option>
-                        <option value="MTS MA`ARIF NU 1 SUMBANG">MTS MA`ARIF NU 1 SUMBANG</option>
-                        <option value="SMP MUHAMMADIYAH SUMBANG">SMP MUHAMMADIYAH SUMBANG</option>
-                        <option value="SMP N 4 SUMBANG">SMP N 4 SUMBANG</option>
-                        <option value="SMP NEGERI 1 SUMBANG">SMP NEGERI 1 SUMBANG</option>
-                        <option value="SMP NEGERI 2 SUMBANG">SMP NEGERI 2 SUMBANG</option>
-                        <option value="SMP PGRI SUMBANG">SMP PGRI SUMBANG</option>
-                        <option value="SMPN 3 SUMBANG">SMPN 3 SUMBANG</option>
-                        <option value="MTS AL MASRURIYAH BATURADEN">MTS AL MASRURIYAH BATURADEN</option>
-                        <option value="SMP BOARDING SCHOOL AL IRSYAD AL ISLAMIYYAH PURWOK">SMP BOARDING SCHOOL AL IRSYAD AL ISLAMIYYAH PURWOKERTO</option>
-                        <option value="SMP NEGERI 1 BATURRADEN">SMP NEGERI 1 BATURRADEN</option>
-                        <option value="SMP NEGERI 2 BATURRADEN">SMP NEGERI 2 BATURRADEN</option>
-                        <option value="SMP PGRI BATURRADEN">SMP PGRI BATURRADEN</option>
-                        <option value="MTS MA`ARIF NU 1 KARANGLEWAS">MTS MA`ARIF NU 1 KARANGLEWAS</option>
-                        <option value="SMP MUHAMMADIYAH 1 KARANGLEWAS">SMP MUHAMMADIYAH 1 KARANGLEWAS</option>
-                        <option value="SMP MUHAMMADIYAH 2 KARANGLEWAS">SMP MUHAMMADIYAH 2 KARANGLEWAS</option>
-                        <option value="SMP NEGERI 1 KARANGLEWAS">SMP NEGERI 1 KARANGLEWAS</option>
-                        <option value="SMP NEGERI 2 KARANGLEWAS">SMP NEGERI 2 KARANGLEWAS</option>
-                        <option value="SMP NEGERI 3 KARANGLEWAS">SMP NEGERI 3 KARANGLEWAS</option>
-                        <option value="0">Sekolah lainnya</option>
-                    </select>
-                </div>
-                <div class="input-group" id="otherSchoolInput" style="display:none;">
-                    <label for="asal_sekolah_lain">Nama Sekolah Lainnya</label>
-                    <input type="text" id="asal_sekolah_lain" name="asal_sekolah_lain" />
+                    <label for="asal_sekolah">Asal Sekolah SMP/MTS</label>
+                    <input type="text" id="asal_sekolah" name="asal_sekolah" />
                 </div>
                 <div class="input-group">
                     <label for="">JENIS KELAMIN</label>
@@ -178,7 +99,7 @@
                 </div>
                 <div class="input-group">
                     <label for="">TELEPHONE/HP</label>
-                    <input type="text" name="telephone" id="" />
+                    <input type="number" name="telephone" id="" />
                 </div>
                 <h1 class="title-form">NAMA ORANG TUA/WALI (AYAH)</h1>
                 <div class="input-group">
@@ -187,7 +108,7 @@
                 </div>
                 <div class="input-group">
                     <label for="">NIK</label>
-                    <input type="text" name="nik_ayah" id="" />
+                    <input type="number" name="nik_ayah" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">TANGGAL LAHIR</label>
@@ -203,11 +124,11 @@
                 </div>
                 <div class="input-group">
                     <label for="">PENGHASILAN</label>
-                    <input type="text" name="penghasilan_ayah" id="" />
+                    <input type="number" name="penghasilan_ayah" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">NO. HP</label>
-                    <input type="text" name="telephone_ayah" id="" />
+                    <input type="number" name="telephone_ayah" id="" />
                 </div>
                 <h1 class="title-form">NAMA ORANG TUA/WALI (IBU)</h1>
                 <div class="input-group">
@@ -216,7 +137,7 @@
                 </div>
                 <div class="input-group">
                     <label for="">NIK</label>
-                    <input type="text" name="nik_ibu" id="" />
+                    <input type="number" name="nik_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">TANGGAL LAHIR</label>
@@ -232,11 +153,11 @@
                 </div>
                 <div class="input-group">
                     <label for="">PENGHASILAN</label>
-                    <input type="text" name="penghasilan_ibu" id="" />
+                    <input type="number" name="penghasilan_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">NO. HP</label>
-                    <input type="text" name="telephone_ibu" id="" />
+                    <input type="number" name="telephone_ibu" id="" />
                 </div>
                 <div class="input-group">
                     <label for="">SUMBER REKOMENDASI</label>
@@ -288,19 +209,18 @@
             </form>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script lang="text/javascript">
-        $(document).ready(function() {
-            $('#asalsekolah').select2();
+    <script>
+        document.getElementById('tanggal_lahir').addEventListener('change', function() {
+            var inputDate = new Date(this.value);
+            var currentDate = new Date();
+            var errorMessage = document.getElementById('error_message');
 
-            $('#asalsekolah').on('change', function() {
-                if ($(this).val() == '0') {
-                    $('#asal_sekolah_lain').show();
-                } else {
-                    $('#asal_sekolah_lain').hide();
-                }
-            });
+            if (inputDate > currentDate) {
+                errorMessage.style.display = 'inline';
+                this.value = '';  // Clear the invalid date
+            } else {
+                errorMessage.style.display = 'none';
+            }
         });
     </script>
 @endsection
