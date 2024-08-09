@@ -26,7 +26,7 @@
             <div class="persuade">
                 <h1 class="title">SIAP KULIAH DAN KERJA</h1>
                 <p class="desc">SEGERA BERGABUNG DENGAN KAMI. JANGAN RAGU UNTUK MAJU!!!</p>
-                <a class="btn-register">DAFTAR SEKARANG</a>
+                <a href="{{route('alurPendaftaran')}}" style="text-decoration: none" class="btn-register">DAFTAR SEKARANG</a>
             </div>
         </div>
     </section>
