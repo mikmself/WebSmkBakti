@@ -79,6 +79,11 @@ class PendaftarController extends Controller
                 return redirect()->back()->withInput($request->all());
             }
             DB::beginTransaction();
+            $file_skl_name = null;
+            $file_kk_name = null;
+            $file_akte_name = null;
+            $file_kip_name = null;
+            $file_sktm_name = null;
             if($request->hasFile('file_skl')){
                 $file_skl = $request->file('file_skl');
                 $file_skl_name = time()."_".$file_skl->getClientOriginalName();
@@ -142,8 +147,8 @@ class PendaftarController extends Controller
                 'file_skl' => $file_skl_name,
                 'file_kk' => $file_kk_name,
                 'file_akte' => $file_akte_name,
-                'file_kip' => $file_kip_name,
-                'file_sktm' => $file_sktm_name
+                'file_kip' => $file_kip_name ? $file_kip_name : null,
+                'file_sktm' => $file_sktm_name ? $file_sktm_name : null,
             ]);
             DB::commit();
             toast('Data berhasil disimpan','success');
@@ -151,7 +156,7 @@ class PendaftarController extends Controller
         }catch (\Exception $e){
             DB::rollBack();
             toast($e->getMessage(),'error');
-            return redirect()->back();
+            return redirect()->back()->withInput($request->all());
         }
     }
 }
