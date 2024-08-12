@@ -24,10 +24,10 @@
                     <label for="">Kompetensi Keahlian <span style="color: red">*</span></label>
                     <select class="" id="" name="kompetensi_keahlian" required>
                         <option value="" {{ old('kompetensi_keahlian') == '' ? 'selected' : '' }}>-- Pilih Kompetensi Keahlian --</option>
-                        <option value="Akutansi Keuangan dan Lembaga" {{ old('kompetensi_keahlian') == 'Akutansi Keuangan dan Lembaga' ? 'selected' : '' }}>Akutansi Keuangan dan Lembaga</option>
-                        <option value="Otomatisasi Tata Kelola Perkantoran" {{ old('kompetensi_keahlian') == 'Otomatisasi Tata Kelola Perkantoran' ? 'selected' : '' }}>Otomatisasi Tata Kelola Perkantoran</option>
-                        <option value="Multimedia" {{ old('kompetensi_keahlian') == 'Multimedia' ? 'selected' : '' }}>Multimedia</option>
-                        <option value="Teknik Komputer dan Jaringan" {{ old('kompetensi_keahlian') == 'Teknik Komputer dan Jaringan' ? 'selected' : '' }}>Teknik Komputer dan Jaringan</option>
+                        <option value="Akutansi Keuangan Lembaga" {{ old('kompetensi_keahlian') == 'Akutansi Keuangan Lembaga' ? 'selected' : '' }}>Akutansi Keuangan Lembaga</option>
+                        <option value="Management Perkantoran dan Layanan Bisnis" {{ old('kompetensi_keahlian') == 'Management Perkantoran dan Layanan Bisnis' ? 'selected' : '' }}>Management Perkantoran dan Layanan Bisnis</option>
+                        <option value="Desain Komunikasi Visual" {{ old('kompetensi_keahlian') == 'Desain Komunikasi Visual' ? 'selected' : '' }}>Desain Komunikasi Visual</option>
+                        <option value="Teknik Komputer Jaringan dan Telekomunikasi" {{ old('kompetensi_keahlian') == 'Teknik Komputer Jaringan dan Telekomunikasi' ? 'selected' : '' }}>Teknik Komputer Jaringan dan Telekomunikasi</option>
                     </select>
                 </div>
                 <h1 class="title-form">DATA DIRI SISWA</h1>
